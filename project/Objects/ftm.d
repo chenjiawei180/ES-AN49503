@@ -1,0 +1,15 @@
+.\objects\ftm.o: ..\drivers\ftm.c
+.\objects\ftm.o: ..\common\common.h
+.\objects\ftm.o: ..\cpu\arm_cm0.h
+.\objects\ftm.o: ..\user\ke06_config.h
+.\objects\ftm.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ftm.o: ..\cpu\headers\MKE06Z4.h
+.\objects\ftm.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\ftm.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\ftm.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\ftm.o: ..\cpu\system_MKE06Z4.h
+.\objects\ftm.o: ..\common\assert.h
+.\objects\ftm.o: ..\common\io.h
+.\objects\ftm.o: ..\common\startup.h
+.\objects\ftm.o: ..\common\stdlib.h
+.\objects\ftm.o: ..\drivers\ftm.h

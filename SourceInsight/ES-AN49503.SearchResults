@@ -1,0 +1,10 @@
+---- BUS_CLK_HZ Matches (9 in 3 files) ----
+Ics.c (e:\github\es-an49503\drivers):   * @brief initialize ICS to the desired clock as defined in BUS_CLK_HZ.
+Ke06_config.h (e:\github\es-an49503\user):        #define  BUS_CLK_HZ		24000000L
+Ke06_config.h (e:\github\es-an49503\user):        #define  BUS_CLK_HZ		20000000L
+Ke06_config.h (e:\github\es-an49503\user):        #define  BUS_CLK_HZ		25000000L
+Ke06_config.h (e:\github\es-an49503\user):        #define  BUS_CLK_HZ		20000000L
+Ke06_config.h (e:\github\es-an49503\user):        #define  BUS_CLK_HZ		20000000L
+Ke06_config.h (e:\github\es-an49503\user):        #define  BUS_CLK_HZ		20971520L
+Ke06_config.h (e:\github\es-an49503\user):        #define  BUS_CLK_HZ		20000000L
+Sysinit.c (e:\github\es-an49503\cpu):    sConfig.u32SysClkHz = BUS_CLK_HZ;

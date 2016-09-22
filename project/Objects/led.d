@@ -1,0 +1,17 @@
+.\objects\led.o: ..\user\led.c
+.\objects\led.o: ..\user\led.h
+.\objects\led.o: ..\user\global.h
+.\objects\led.o: ..\drivers\gpio.h
+.\objects\led.o: ..\common\common.h
+.\objects\led.o: ..\cpu\arm_cm0.h
+.\objects\led.o: ..\user\ke06_config.h
+.\objects\led.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led.o: ..\cpu\headers\MKE06Z4.h
+.\objects\led.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\led.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\led.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\led.o: ..\cpu\system_MKE06Z4.h
+.\objects\led.o: ..\common\assert.h
+.\objects\led.o: ..\common\io.h
+.\objects\led.o: ..\common\startup.h
+.\objects\led.o: ..\common\stdlib.h

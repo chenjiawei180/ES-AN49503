@@ -1,0 +1,15 @@
+.\objects\pwt.o: ..\drivers\pwt.c
+.\objects\pwt.o: ..\common\common.h
+.\objects\pwt.o: ..\cpu\arm_cm0.h
+.\objects\pwt.o: ..\user\ke06_config.h
+.\objects\pwt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pwt.o: ..\cpu\headers\MKE06Z4.h
+.\objects\pwt.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\pwt.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\pwt.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\pwt.o: ..\cpu\system_MKE06Z4.h
+.\objects\pwt.o: ..\common\assert.h
+.\objects\pwt.o: ..\common\io.h
+.\objects\pwt.o: ..\common\startup.h
+.\objects\pwt.o: ..\common\stdlib.h
+.\objects\pwt.o: ..\drivers\pwt.h

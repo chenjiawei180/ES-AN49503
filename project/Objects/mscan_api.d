@@ -1,0 +1,16 @@
+.\objects\mscan_api.o: ..\user\mscan_api.c
+.\objects\mscan_api.o: ..\common\common.h
+.\objects\mscan_api.o: ..\cpu\arm_cm0.h
+.\objects\mscan_api.o: ..\user\ke06_config.h
+.\objects\mscan_api.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mscan_api.o: ..\cpu\headers\MKE06Z4.h
+.\objects\mscan_api.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\mscan_api.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\mscan_api.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\mscan_api.o: ..\cpu\system_MKE06Z4.h
+.\objects\mscan_api.o: ..\common\assert.h
+.\objects\mscan_api.o: ..\common\io.h
+.\objects\mscan_api.o: ..\common\startup.h
+.\objects\mscan_api.o: ..\common\stdlib.h
+.\objects\mscan_api.o: ..\drivers\mscan.h
+.\objects\mscan_api.o: ..\user\mscan_api.h

@@ -1,0 +1,315 @@
+;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Thu Sep 22 09:35:04 2016
+;VERSION 0.2
+;FILE acmp.o
+ACMP0_Isr <= USED 0
+ACMP1_Isr <= USED 0
+ACMP_ConfigDAC <= USED 0
+ACMP_DeInit <= USED 0
+ACMP_Init <= USED 0
+ACMP_SetCallback <= USED 0
+__asm___6_acmp_c_c41cfeb2____REV16 <= USED 0
+__asm___6_acmp_c_c41cfeb2____REVSH <= USED 0
+;FILE adc.o
+ADC_DeInit <= USED 0
+ADC_Init <= USED 0
+ADC_Isr <= USED 0
+ADC_PollRead <= USED 0
+ADC_SelectClock <= USED 0
+ADC_SelectClockDivide <= USED 0
+ADC_SetCallBack <= USED 0
+ADC_SetChannel <= USED 0
+ADC_SetFifoLevel <= USED 0
+ADC_SetMode <= USED 0
+ADC_VrefSelect <= USED 0
+__asm___5_adc_c_8b49ac80____REV16 <= USED 0
+__asm___5_adc_c_8b49ac80____REVSH <= USED 0
+;FILE alloc.o
+__asm___7_alloc_c_free____REV16 <= USED 0
+__asm___7_alloc_c_free____REVSH <= USED 0
+free <= USED 0
+malloc <= USED 0
+;FILE arm_cm0.o
+__asm___9_arm_cm0_c_stop____REV16 <= USED 0
+__asm___9_arm_cm0_c_stop____REVSH <= USED 0
+stop <= USED 0
+wait <= USED 0
+write_vtor <= USED 0
+;FILE assert.o
+__asm___8_assert_c_ae791a4b____REV16 <= USED 0
+__asm___8_assert_c_ae791a4b____REVSH <= USED 0
+;FILE crc.o
+CRC_Cal16 <= USED 0
+CRC_Cal32 <= USED 0
+CRC_DeInit <= USED 0
+CRC_Init <= USED 0
+__asm___5_crc_c_CRC_Init____REV16 <= USED 0
+__asm___5_crc_c_CRC_Init____REVSH <= USED 0
+;FILE flash.o
+FLASH_CheckErrStatus <= USED 0
+FLASH_EraseAll <= USED 0
+FLASH_EraseBlock <= USED 0
+FLASH_EraseBlock_NoWait <= USED 0
+FLASH_EraseSector <= USED 0
+FLASH_EraseVerifyAll <= USED 0
+FLASH_EraseVerifyBlock <= USED 0
+FLASH_EraseVerifySection <= USED 0
+FLASH_Init <= USED 0
+FLASH_LaunchCMD <= USED 0
+FLASH_Program <= USED 0
+FLASH_Program1LongWord <= USED 0
+FLASH_Program2LongWords <= USED 0
+FLASH_ProgramOnce <= USED 0
+FLASH_ReadOnce <= USED 0
+FLASH_SetUserMarginLevel <= USED 0
+FLASH_Unsecure <= USED 0
+FLASH_VerifyBackdoorKey <= USED 0
+__asm___7_flash_c_a1c89a96____REV16 <= USED 0
+__asm___7_flash_c_a1c89a96____REVSH <= USED 0
+;FILE ftm.o
+FTM0_Isr <= USED 0
+FTM1_Isr <= USED 0
+FTM2_Isr <= USED 0
+FTM_ChannelInit <= USED 0
+FTM_ClockSet <= USED 0
+FTM_DeInit <= USED 0
+FTM_DualEdgeCaptureInit <= USED 0
+FTM_GenerateTrig2 <= USED 0
+FTM_HardwareSync <= USED 0
+FTM_HardwareSyncCombine <= USED 0
+FTM_Init <= USED 0
+FTM_InputCaptureInit <= USED 0
+FTM_InvertChannel <= USED 0
+FTM_OutputCompareInit <= USED 0
+FTM_OutputMaskSet <= USED 0
+FTM_PWMDeadtimeSet <= USED 0
+FTM_PWMInit <= USED 0
+FTM_PolaritySet <= USED 0
+FTM_SWOutputControlSet <= USED 0
+FTM_SetCallback <= USED 0
+FTM_SetDebugModeBehavior <= USED 0
+FTM_SetDutyCycleCombine <= USED 0
+FTM_SetTOFFrequency <= USED 0
+FTM_SoftwareSync <= USED 0
+FTM_SyncConfigActivate <= USED 0
+FTM_SyncConfigDeactivate <= USED 0
+__asm___5_ftm_c_4feeb177____REV16 <= USED 0
+__asm___5_ftm_c_4feeb177____REVSH <= USED 0
+;FILE gpio.o
+GPIO_DeInit <= USED 0
+GPIO_PinInit <= USED 0
+GPIO_PinSet <= USED 0
+GPIO_PinToggle <= USED 0
+GPIO_Read <= USED 0
+GPIO_Write <= USED 0
+__asm___6_gpio_c_f8e8e39a____REV16 <= USED 0
+__asm___6_gpio_c_f8e8e39a____REVSH <= USED 0
+;FILE i2c.o
+I2C0_Isr <= USED 0
+I2C0_SetCallBack <= USED 0
+I2C1_Isr <= USED 0
+I2C1_SetCallBack <= USED 0
+I2C_Deinit <= USED 0
+I2C_Init <= USED 0
+I2C_IntDisable <= USED 0
+I2C_IntEnable <= USED 0
+I2C_MasterReadWait <= USED 0
+I2C_MasterSendWait <= USED 0
+I2C_ReadOneByte <= USED 0
+I2C_RepeatStart <= USED 0
+I2C_SetSCLLowTimeout <= USED 0
+I2C_SetSlaveAddress <= USED 0
+I2C_Start <= USED 0
+I2C_Stop <= USED 0
+I2C_WriteOneByte <= USED 0
+__asm___5_i2c_c_I2C_Init____REV16 <= USED 0
+__asm___5_i2c_c_I2C_Init____REVSH <= USED 0
+;FILE ics.o
+FBELP_to_FBE <= USED 0
+FBE_to_FBELP <= USED 0
+FBE_to_FBI <= USED 0
+FBE_to_FEE <= USED 0
+FBE_to_FEI <= USED 0
+FBILP_to_FBI <= USED 0
+FBI_to_FBE <= USED 0
+FBI_to_FBILP <= USED 0
+FBI_to_FEE <= USED 0
+FBI_to_FEI <= USED 0
+FEE_to_FBE <= USED 0
+FEE_to_FBI <= USED 0
+FEE_to_FEI <= USED 0
+FEI_to_FBE <= USED 0
+FEI_to_FBI <= USED 0
+ICS_DeInit <= USED 0
+OSC_DeInit <= USED 0
+__asm___5_ics_c_e07456d3____REV16 <= USED 0
+__asm___5_ics_c_e07456d3____REVSH <= USED 0
+;FILE io.o
+__asm___4_io_c_in_char____REV16 <= USED 0
+__asm___4_io_c_in_char____REVSH <= USED 0
+char_present <= USED 0
+in_char <= USED 0
+;FILE kbi.o
+KBI0_Isr <= USED 0
+KBI1_Isr <= USED 0
+KBI_DeInit <= USED 0
+KBI_Init <= USED 0
+KBI_SetCallback <= USED 0
+__asm___5_kbi_c_9ee91e6b____REV16 <= USED 0
+__asm___5_kbi_c_9ee91e6b____REVSH <= USED 0
+;FILE led.o
+GREEN_Off <= USED 0
+GREEN_On <= USED 0
+RED_Off <= USED 0
+RED_On <= USED 0
+RED_Toggle <= USED 0
+__asm___5_led_c_RED_Init____REV16 <= USED 0
+__asm___5_led_c_RED_Init____REVSH <= USED 0
+;FILE main.o
+__asm___6_main_c_main____REV16 <= USED 0
+__asm___6_main_c_main____REVSH <= USED 0
+;FILE memtest.o
+memTestAddressBus <= USED 0
+memTestDataBus <= USED 0
+memTestDevice <= USED 0
+;FILE mscan.o
+CAN_DeInit <= USED 0
+CAN_EnterSleep <= USED 0
+CAN_Init <= USED 0
+CAN_LaunchInitialRequest <= USED 0
+CAN_LoadOneFrameToBuff <= USED 0
+CAN_ReadOneFrameFromBuff <= USED 0
+CAN_WakeUpFromSleep <= USED 0
+MSCAN_RxIsr <= USED 0
+MSCAN_SetRxCallBack <= USED 0
+MSCAN_SetTxCallBack <= USED 0
+MSCAN_TxIsr <= USED 0
+__asm___7_mscan_c_CAN_Init____REV16 <= USED 0
+__asm___7_mscan_c_CAN_Init____REVSH <= USED 0
+;FILE pit.o
+PIT_Ch0Isr <= USED 0
+PIT_Ch1Isr <= USED 0
+PIT_DeInit <= USED 0
+PIT_Init <= USED 0
+PIT_SetCallback <= USED 0
+PIT_SetLoadVal <= USED 0
+__asm___5_pit_c_1212da85____REV16 <= USED 0
+__asm___5_pit_c_1212da85____REVSH <= USED 0
+;FILE pmc.o
+PMC_DeInit <= USED 0
+PMC_Init <= USED 0
+PMC_SetMode <= USED 0
+__asm___5_pmc_c_PMC_Init____REV16 <= USED 0
+__asm___5_pmc_c_PMC_Init____REVSH <= USED 0
+;FILE pwt.o
+PWT_DeInit <= USED 0
+PWT_Init <= USED 0
+PWT_Isr <= USED 0
+PWT_SetCallback <= USED 0
+__asm___5_pwt_c_ee923548____REV16 <= USED 0
+__asm___5_pwt_c_ee923548____REVSH <= USED 0
+;FILE queue.o
+__asm___7_queue_c_6324ac82____REV16 <= USED 0
+__asm___7_queue_c_6324ac82____REVSH <= USED 0
+queue_add <= USED 0
+queue_init <= USED 0
+queue_isempty <= USED 0
+queue_move <= USED 0
+queue_peek <= USED 0
+queue_remove <= USED 0
+;FILE rtc.o
+RTC_DeInit <= USED 0
+RTC_Init <= USED 0
+RTC_SetCallback <= USED 0
+__asm___5_rtc_c_5e395747____REV16 <= USED 0
+__asm___5_rtc_c_5e395747____REVSH <= USED 0
+;FILE sim.o
+SIM_GetStatus <= USED 0
+SIM_ReadID <= USED 0
+SIM_SetClockGating <= USED 0
+__asm___5_sim_c_SIM_Init____REV16 <= USED 0
+__asm___5_sim_c_SIM_Init____REVSH <= USED 0
+;FILE spi.o
+SPI0_Isr <= USED 0
+SPI1_Isr <= USED 0
+SPI_DeInit <= USED 0
+SPI_Init <= USED 0
+SPI_SetBaudRate <= USED 0
+SPI_SetCallback <= USED 0
+SPI_TransferWait <= USED 0
+__asm___5_spi_c_6267f863____REV16 <= USED 0
+__asm___5_spi_c_6267f863____REVSH <= USED 0
+;FILE start.o
+__asm___7_start_c_start____REV16 <= USED 0
+__asm___7_start_c_start____REVSH <= USED 0
+cpu_identify <= USED 0
+flash_identify <= USED 0
+start <= USED 0
+;FILE startup_mke06z4.o
+BusFault_Handler <= USED 0
+DebugMon_Handler <= USED 0
+HardFault_Handler <= USED 0
+MemManage_Handler <= USED 0
+UsageFault_Handler <= USED 0
+;FILE stdlib.o
+__asm___8_stdlib_c_isspace____REV16 <= USED 0
+__asm___8_stdlib_c_isspace____REVSH <= USED 0
+isalnum <= USED 0
+isdigit <= USED 0
+isspace <= USED 0
+isupper <= USED 0
+memcpy <= USED 0
+memset <= USED 0
+strcasecmp <= USED 0
+strcat <= USED 0
+strcmp <= USED 0
+strcpy <= USED 0
+strlen <= USED 0
+strncasecmp <= USED 0
+strncat <= USED 0
+strncmp <= USED 0
+strncpy <= USED 0
+strtoul <= USED 0
+;FILE sysinit.o
+UART_InitPrint <= USED 0
+__asm___9_sysinit_c_96a8071a____REV16 <= USED 0
+__asm___9_sysinit_c_96a8071a____REVSH <= USED 0
+end_test <= USED 0
+print_sys_log <= USED 0
+;FILE systick.o
+__asm___9_systick_c_57e5245c____REV16 <= USED 0
+__asm___9_systick_c_57e5245c____REVSH <= USED 0
+cal_systick_read_overhead <= USED 0
+systick_disable <= USED 0
+systick_init <= USED 0
+;FILE uart.o
+UART0_Isr <= USED 0
+UART1_Isr <= USED 0
+UART2_Isr <= USED 0
+UART_CheckFlag <= USED 0
+UART_DisableInterrupt <= USED 0
+UART_EnableInterrupt <= USED 0
+UART_GetChar <= USED 0
+UART_GetFlags <= USED 0
+UART_Init <= USED 0
+UART_ReceiveWait <= USED 0
+UART_SendWait <= USED 0
+UART_SetBaudrate <= USED 0
+UART_SetCallback <= USED 0
+UART_WaitTxComplete <= USED 0
+__asm___6_uart_c_687c3c16____REV16 <= USED 0
+__asm___6_uart_c_687c3c16____REVSH <= USED 0
+;FILE vectors.o
+__asm___9_vectors_c_4c5a6640____REV16 <= USED 0
+__asm___9_vectors_c_4c5a6640____REVSH <= USED 0
+abort_isr <= USED 0
+hard_fault_handler_c <= USED 0
+;FILE wdog.o
+WDOG_DeInit <= USED 0
+WDOG_DisableUpdate <= USED 0
+WDOG_DisableWDOGEnableUpdate <= USED 0
+WDOG_Enable <= USED 0
+WDOG_EnableUpdate <= USED 0
+WDOG_Feed <= USED 0
+WDOG_Init <= USED 0
+__asm___6_wdog_c_117767bb____REV16 <= USED 0
+__asm___6_wdog_c_117767bb____REVSH <= USED 0

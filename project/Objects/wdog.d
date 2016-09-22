@@ -1,0 +1,16 @@
+.\objects\wdog.o: ..\drivers\wdog.c
+.\objects\wdog.o: ..\common\common.h
+.\objects\wdog.o: ..\cpu\arm_cm0.h
+.\objects\wdog.o: ..\user\ke06_config.h
+.\objects\wdog.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\wdog.o: ..\cpu\headers\MKE06Z4.h
+.\objects\wdog.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\wdog.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\wdog.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\wdog.o: ..\cpu\system_MKE06Z4.h
+.\objects\wdog.o: ..\common\assert.h
+.\objects\wdog.o: ..\common\io.h
+.\objects\wdog.o: ..\common\startup.h
+.\objects\wdog.o: ..\common\stdlib.h
+.\objects\wdog.o: ..\drivers\wdog.h
+.\objects\wdog.o: ..\drivers\sim.h

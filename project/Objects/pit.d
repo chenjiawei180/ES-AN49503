@@ -1,0 +1,15 @@
+.\objects\pit.o: ..\drivers\pit.c
+.\objects\pit.o: ..\common\common.h
+.\objects\pit.o: ..\cpu\arm_cm0.h
+.\objects\pit.o: ..\user\ke06_config.h
+.\objects\pit.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pit.o: ..\cpu\headers\MKE06Z4.h
+.\objects\pit.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\pit.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\pit.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\pit.o: ..\cpu\system_MKE06Z4.h
+.\objects\pit.o: ..\common\assert.h
+.\objects\pit.o: ..\common\io.h
+.\objects\pit.o: ..\common\startup.h
+.\objects\pit.o: ..\common\stdlib.h
+.\objects\pit.o: ..\drivers\pit.h

@@ -1,0 +1,15 @@
+.\objects\gpio.o: ..\drivers\gpio.c
+.\objects\gpio.o: ..\drivers\gpio.h
+.\objects\gpio.o: ..\common\common.h
+.\objects\gpio.o: ..\cpu\arm_cm0.h
+.\objects\gpio.o: ..\user\ke06_config.h
+.\objects\gpio.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gpio.o: ..\cpu\headers\MKE06Z4.h
+.\objects\gpio.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\gpio.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\gpio.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\gpio.o: ..\cpu\system_MKE06Z4.h
+.\objects\gpio.o: ..\common\assert.h
+.\objects\gpio.o: ..\common\io.h
+.\objects\gpio.o: ..\common\startup.h
+.\objects\gpio.o: ..\common\stdlib.h

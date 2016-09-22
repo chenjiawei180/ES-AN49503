@@ -1,0 +1,16 @@
+.\objects\vectors.o: ..\cpu\vectors.c
+.\objects\vectors.o: ..\cpu\vectors.h
+.\objects\vectors.o: ..\user\isr.h
+.\objects\vectors.o: ..\common\common.h
+.\objects\vectors.o: ..\cpu\arm_cm0.h
+.\objects\vectors.o: ..\user\ke06_config.h
+.\objects\vectors.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\vectors.o: ..\cpu\headers\MKE06Z4.h
+.\objects\vectors.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\vectors.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\vectors.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\vectors.o: ..\cpu\system_MKE06Z4.h
+.\objects\vectors.o: ..\common\assert.h
+.\objects\vectors.o: ..\common\io.h
+.\objects\vectors.o: ..\common\startup.h
+.\objects\vectors.o: ..\common\stdlib.h

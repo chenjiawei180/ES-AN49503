@@ -1,0 +1,38 @@
+--cpu Cortex-M0+
+".\objects\alloc.o"
+".\objects\assert.o"
+".\objects\io.o"
+".\objects\memtest.o"
+".\objects\queue.o"
+".\objects\stdlib.o"
+".\objects\arm_cm0.o"
+".\objects\start.o"
+".\objects\sysinit.o"
+".\objects\systick.o"
+".\objects\vectors.o"
+".\objects\startup_mke06z4.o"
+".\objects\acmp.o"
+".\objects\adc.o"
+".\objects\crc.o"
+".\objects\flash.o"
+".\objects\ftm.o"
+".\objects\gpio.o"
+".\objects\i2c.o"
+".\objects\ics.o"
+".\objects\kbi.o"
+".\objects\mscan.o"
+".\objects\pit.o"
+".\objects\pmc.o"
+".\objects\pwt.o"
+".\objects\rtc.o"
+".\objects\sim.o"
+".\objects\spi.o"
+".\objects\uart.o"
+".\objects\wdog.o"
+".\objects\main.o"
+".\objects\led.o"
+--library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x1FFFF000 --entry Reset_Handler --first __Vectors
+--feedback ".\Objects\ES-AN49503.fed" --feedback_image=none
+--strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ES-AN49503.map" -o .\Objects\ES-AN49503.axf

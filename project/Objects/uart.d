@@ -1,0 +1,17 @@
+.\objects\uart.o: ..\drivers\uart.c
+.\objects\uart.o: ..\drivers\uart.h
+.\objects\uart.o: ..\common\common.h
+.\objects\uart.o: ..\cpu\arm_cm0.h
+.\objects\uart.o: ..\user\ke06_config.h
+.\objects\uart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart.o: ..\cpu\headers\MKE06Z4.h
+.\objects\uart.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\uart.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\uart.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\uart.o: ..\cpu\system_MKE06Z4.h
+.\objects\uart.o: ..\common\assert.h
+.\objects\uart.o: ..\common\io.h
+.\objects\uart.o: ..\common\startup.h
+.\objects\uart.o: ..\common\stdlib.h
+.\objects\uart.o: ..\drivers\wdog.h
+.\objects\uart.o: ..\drivers\sim.h

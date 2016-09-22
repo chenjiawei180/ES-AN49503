@@ -1,0 +1,470 @@
+Dependencies for Project 'ES-AN49503', Target 'ES-AN49503': (DO NOT MODIFY !)
+F (..\common\alloc.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\alloc.o --omf_browse .\objects\alloc.crf --depend .\objects\alloc.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+F (..\common\assert.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\assert.o --omf_browse .\objects\assert.crf --depend .\objects\assert.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+F (..\common\io.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\io.o --omf_browse .\objects\io.crf --depend .\objects\io.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\uart.h)(0x53217EC8)
+I (..\drivers\wdog.h)(0x53217EC8)
+I (..\drivers\sim.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+F (..\common\memtest.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\memtest.o --omf_browse .\objects\memtest.crf --depend .\objects\memtest.d)
+I (..\common\memtest.h)(0x53217EC8)
+F (..\common\queue.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\common\queue.h)(0x53217EC8)
+F (..\common\stdlib.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\stdlib.o --omf_browse .\objects\stdlib.crf --depend .\objects\stdlib.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+F (..\cpu\arm_cm0.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\arm_cm0.o --omf_browse .\objects\arm_cm0.crf --depend .\objects\arm_cm0.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+F (..\cpu\start.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\start.o --omf_browse .\objects\start.crf --depend .\objects\start.d)
+I (..\cpu\start.h)(0x53217EC8)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\wdog.h)(0x53217EC8)
+I (..\drivers\sim.h)(0x53217EC8)
+I (..\cpu\sysinit.h)(0x53217EC8)
+F (..\cpu\sysinit.c)(0x57E1D19D)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\sysinit.o --omf_browse .\objects\sysinit.crf --depend .\objects\sysinit.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\cpu\sysinit.h)(0x53217EC8)
+I (..\drivers\sim.h)(0x53217EC8)
+I (..\drivers\uart.h)(0x53217EC8)
+I (..\drivers\wdog.h)(0x53217EC8)
+I (..\drivers\ics.h)(0x53217EC8)
+F (..\cpu\systick.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\cpu\systick.h)(0x53217EC8)
+F (..\cpu\vectors.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\vectors.o --omf_browse .\objects\vectors.crf --depend .\objects\vectors.d)
+I (..\cpu\vectors.h)(0x53217EC8)
+I (..\user\isr.h)(0x53217EC8)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+F (..\cpu\startup_MKE06Z4.s)(0x53217EC8)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 521" --pd "MKE06Z128xxx4 SETA 1"--list .\listings\startup_mke06z4.lst --xref -o .\objects\startup_mke06z4.o --depend .\objects\startup_mke06z4.d)
+F (..\drivers\acmp.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\acmp.o --omf_browse .\objects\acmp.crf --depend .\objects\acmp.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\acmp.h)(0x53217EC8)
+F (..\drivers\adc.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\adc.h)(0x53217EC8)
+F (..\drivers\crc.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\crc.o --omf_browse .\objects\crc.crf --depend .\objects\crc.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\crc.h)(0x53217EC8)
+F (..\drivers\flash.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\flash.o --omf_browse .\objects\flash.crf --depend .\objects\flash.d)
+I (..\drivers\flash.h)(0x53217EC8)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+F (..\drivers\ftm.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\ftm.o --omf_browse .\objects\ftm.crf --depend .\objects\ftm.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\ftm.h)(0x53217EC8)
+F (..\drivers\gpio.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\drivers\gpio.h)(0x53217EC8)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+F (..\drivers\i2c.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\i2c.h)(0x53217EC8)
+F (..\drivers\ics.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\ics.o --omf_browse .\objects\ics.crf --depend .\objects\ics.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\ics.h)(0x53217EC8)
+F (..\drivers\kbi.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\kbi.o --omf_browse .\objects\kbi.crf --depend .\objects\kbi.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\kbi.h)(0x53217EC8)
+F (..\drivers\mscan.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\mscan.o --omf_browse .\objects\mscan.crf --depend .\objects\mscan.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\mscan.h)(0x57E1E3A0)
+F (..\drivers\pit.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\pit.o --omf_browse .\objects\pit.crf --depend .\objects\pit.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\pit.h)(0x53217EC8)
+F (..\drivers\pmc.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\pmc.o --omf_browse .\objects\pmc.crf --depend .\objects\pmc.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\pmc.h)(0x53217EC8)
+F (..\drivers\pwt.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\pwt.o --omf_browse .\objects\pwt.crf --depend .\objects\pwt.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\pwt.h)(0x53217EC8)
+F (..\drivers\rtc.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\rtc.o --omf_browse .\objects\rtc.crf --depend .\objects\rtc.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\rtc.h)(0x53217EC8)
+F (..\drivers\sim.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\sim.o --omf_browse .\objects\sim.crf --depend .\objects\sim.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\sim.h)(0x53217EC8)
+F (..\drivers\spi.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\spi.h)(0x53217EC8)
+F (..\drivers\uart.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (..\drivers\uart.h)(0x53217EC8)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\wdog.h)(0x53217EC8)
+I (..\drivers\sim.h)(0x53217EC8)
+F (..\drivers\wdog.c)(0x53217EC8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\wdog.o --omf_browse .\objects\wdog.crf --depend .\objects\wdog.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\wdog.h)(0x53217EC8)
+I (..\drivers\sim.h)(0x53217EC8)
+F (..\user\main.c)(0x57E33533)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)
+I (..\drivers\ics.h)(0x53217EC8)
+I (..\cpu\sysinit.h)(0x53217EC8)
+I (..\user\led.h)(0x57E32DE2)
+I (..\user\global.h)(0x57E3277C)
+I (..\drivers\gpio.h)(0x53217EC8)
+F (..\user\led.c)(0x57E32FD8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user-IE:\Github\ES-AN49503\project\RTE-ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (..\user\led.h)(0x57E32DE2)
+I (..\user\global.h)(0x57E3277C)
+I (..\drivers\gpio.h)(0x53217EC8)
+I (..\common\common.h)(0x53217EC8)
+I (..\cpu\arm_cm0.h)(0x53217EC8)
+I (..\user\ke06_config.h)(0x57E3286E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\cpu\headers\MKE06Z4.h)(0x53217EC8)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x570F4548)
+I (D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x570F4548)
+I (..\cpu\system_MKE06Z4.h)(0x53217EC8)
+I (..\common\assert.h)(0x53217EC8)
+I (..\common\io.h)(0x53217EC8)
+I (..\common\startup.h)(0x53217EC8)
+I (..\common\stdlib.h)(0x53217EC8)

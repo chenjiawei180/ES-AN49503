@@ -1,0 +1,14 @@
+.\objects\assert.o: ..\common\assert.c
+.\objects\assert.o: ..\common\common.h
+.\objects\assert.o: ..\cpu\arm_cm0.h
+.\objects\assert.o: ..\user\ke06_config.h
+.\objects\assert.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\assert.o: ..\cpu\headers\MKE06Z4.h
+.\objects\assert.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\assert.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\assert.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\assert.o: ..\cpu\system_MKE06Z4.h
+.\objects\assert.o: ..\common\assert.h
+.\objects\assert.o: ..\common\io.h
+.\objects\assert.o: ..\common\startup.h
+.\objects\assert.o: ..\common\stdlib.h

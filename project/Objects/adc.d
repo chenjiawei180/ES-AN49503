@@ -1,0 +1,15 @@
+.\objects\adc.o: ..\drivers\adc.c
+.\objects\adc.o: ..\common\common.h
+.\objects\adc.o: ..\cpu\arm_cm0.h
+.\objects\adc.o: ..\user\ke06_config.h
+.\objects\adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adc.o: ..\cpu\headers\MKE06Z4.h
+.\objects\adc.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\adc.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\adc.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\adc.o: ..\cpu\system_MKE06Z4.h
+.\objects\adc.o: ..\common\assert.h
+.\objects\adc.o: ..\common\io.h
+.\objects\adc.o: ..\common\startup.h
+.\objects\adc.o: ..\common\stdlib.h
+.\objects\adc.o: ..\drivers\adc.h

@@ -1,0 +1,14 @@
+.\objects\arm_cm0.o: ..\cpu\arm_cm0.c
+.\objects\arm_cm0.o: ..\common\common.h
+.\objects\arm_cm0.o: ..\cpu\arm_cm0.h
+.\objects\arm_cm0.o: ..\user\ke06_config.h
+.\objects\arm_cm0.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\arm_cm0.o: ..\cpu\headers\MKE06Z4.h
+.\objects\arm_cm0.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\objects\arm_cm0.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\objects\arm_cm0.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\objects\arm_cm0.o: ..\cpu\system_MKE06Z4.h
+.\objects\arm_cm0.o: ..\common\assert.h
+.\objects\arm_cm0.o: ..\common\io.h
+.\objects\arm_cm0.o: ..\common\startup.h
+.\objects\arm_cm0.o: ..\common\stdlib.h
