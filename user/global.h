@@ -7,6 +7,8 @@
 #ifndef __GLOBAL_H
 #define __GLOBAL_H
 
+#include "common.h"
+
 #ifdef OS_GLOBALS
 #define OS_EXT
 #else

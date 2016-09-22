@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Thu Sep 22 09:35:04 2016
+;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Thu Sep 22 14:47:49 2016
 ;VERSION 0.2
 ;FILE acmp.o
 ACMP0_Isr <= USED 0
@@ -97,9 +97,9 @@ __asm___5_ftm_c_4feeb177____REVSH <= USED 0
 ;FILE gpio.o
 GPIO_DeInit <= USED 0
 GPIO_PinInit <= USED 0
-GPIO_PinSet <= USED 0
 GPIO_PinToggle <= USED 0
 GPIO_Read <= USED 0
+GPIO_Toggle <= USED 0
 GPIO_Write <= USED 0
 __asm___6_gpio_c_f8e8e39a____REV16 <= USED 0
 __asm___6_gpio_c_f8e8e39a____REVSH <= USED 0
@@ -158,7 +158,7 @@ __asm___5_kbi_c_9ee91e6b____REV16 <= USED 0
 __asm___5_kbi_c_9ee91e6b____REVSH <= USED 0
 ;FILE led.o
 GREEN_Off <= USED 0
-GREEN_On <= USED 0
+GREEN_Toggle <= USED 0
 RED_Off <= USED 0
 RED_On <= USED 0
 RED_Toggle <= USED 0
@@ -305,11 +305,12 @@ abort_isr <= USED 0
 hard_fault_handler_c <= USED 0
 ;FILE wdog.o
 WDOG_DeInit <= USED 0
+WDOG_Disable <= USED 0
 WDOG_DisableUpdate <= USED 0
-WDOG_DisableWDOGEnableUpdate <= USED 0
 WDOG_Enable <= USED 0
 WDOG_EnableUpdate <= USED 0
-WDOG_Feed <= USED 0
-WDOG_Init <= USED 0
 __asm___6_wdog_c_117767bb____REV16 <= USED 0
 __asm___6_wdog_c_117767bb____REVSH <= USED 0
+;FILE wdt.o
+__asm___5_wdt_c_WDT_Init____REV16 <= USED 0
+__asm___5_wdt_c_WDT_Init____REVSH <= USED 0

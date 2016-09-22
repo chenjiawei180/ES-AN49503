@@ -554,6 +554,11 @@
               <FileType>1</FileType>
               <FilePath>..\user\led.c</FilePath>
             </File>
+            <File>
+              <FileName>wdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\wdt.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

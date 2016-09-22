@@ -56,7 +56,7 @@
 #define TRIM_IRC                    /*!< trim internal reference clock */
 
 //#define SPI0_PINREMAP             /*!< remap SPI0 pins to alternative pins */
-#define DISABLE_NMI                 /*!< disable NMI function */
+//#define DISABLE_NMI                 /*!< disable NMI function */
 
 /* HW abstraction for register name remap */
 #define FTMRH           FTMRE
@@ -199,6 +199,8 @@
 
     /*! define UART port # to be used */
     #define TERM_PORT   UART1               /*!< UART1 is used on KE06 freedom board */
+
+    #define ENABLE_WDOG
 
 #endif
 

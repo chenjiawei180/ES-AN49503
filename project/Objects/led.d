@@ -1,7 +1,6 @@
 .\objects\led.o: ..\user\led.c
 .\objects\led.o: ..\user\led.h
 .\objects\led.o: ..\user\global.h
-.\objects\led.o: ..\drivers\gpio.h
 .\objects\led.o: ..\common\common.h
 .\objects\led.o: ..\cpu\arm_cm0.h
 .\objects\led.o: ..\user\ke06_config.h
@@ -15,3 +14,4 @@
 .\objects\led.o: ..\common\io.h
 .\objects\led.o: ..\common\startup.h
 .\objects\led.o: ..\common\stdlib.h
+.\objects\led.o: ..\drivers\gpio.h

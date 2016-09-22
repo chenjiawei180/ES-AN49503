@@ -17,3 +17,6 @@
 .\objects\main.o: ..\user\led.h
 .\objects\main.o: ..\user\global.h
 .\objects\main.o: ..\drivers\gpio.h
+.\objects\main.o: ..\user\wdt.h
+.\objects\main.o: ..\drivers\wdog.h
+.\objects\main.o: ..\drivers\sim.h
