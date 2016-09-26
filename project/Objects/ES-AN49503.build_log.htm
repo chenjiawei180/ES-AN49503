@@ -22,7 +22,7 @@ Dialog DLL:      TARMCM1.DLL V1.10.0.0
  
 <h2>Project:</h2>
 E:\Github\ES-AN49503\project\ES-AN49503.uvprojx
-Project File Date:  09/22/2016
+Project File Date:  09/23/2016
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
@@ -69,9 +69,11 @@ compiling main.c...
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
 ..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
-..\user\main.c(19): warning:  #177-D: variable "i" was declared but never referenced
+..\user\main.c(23): warning:  #177-D: variable "i" was declared but never referenced
       uint32_t i;
-..\user\main.c: 3 warnings, 0 errors
+..\user\main.c(24): warning:  #177-D: variable "data" was declared but never referenced
+      uint16_t data=0;
+..\user\main.c: 4 warnings, 0 errors
 compiling led.c...
 ..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
@@ -79,9 +81,18 @@ compiling led.c...
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
 ..\user\led.c: 2 warnings, 0 errors
 compiling wdt.c...
+compiling spi_app.c...
+..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
+      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
+..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
+      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
+..\user\spi_app.c(100): warning:  #177-D: variable "crc" was declared but never referenced
+      uint8_t crc = 0;
+..\user\spi_app.c: 3 warnings, 0 errors
+compiling crc.c...
 linking...
-Program Size: Code=3776 RO-data=452 RW-data=12 ZI-data=516  
-".\Objects\ES-AN49503.axf" - 0 Error(s), 7 Warning(s).
+Program Size: Code=4912 RO-data=708 RW-data=12 ZI-data=612  
+".\Objects\ES-AN49503.axf" - 0 Error(s), 11 Warning(s).
 
 *** Performing Cross-Module-Optimization:
 compiling alloc.c...
@@ -123,9 +134,11 @@ compiling main.c...
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
 ..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
-..\user\main.c(19): warning:  #177-D: variable "i" was declared but never referenced
+..\user\main.c(23): warning:  #177-D: variable "i" was declared but never referenced
       uint32_t i;
-..\user\main.c: 3 warnings, 0 errors
+..\user\main.c(24): warning:  #177-D: variable "data" was declared but never referenced
+      uint16_t data=0;
+..\user\main.c: 4 warnings, 0 errors
 compiling led.c...
 ..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
@@ -133,10 +146,19 @@ compiling led.c...
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
 ..\user\led.c: 2 warnings, 0 errors
 compiling wdt.c...
+compiling spi_app.c...
+..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
+      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
+..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
+      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
+..\user\spi_app.c(100): warning:  #177-D: variable "crc" was declared but never referenced
+      uint8_t crc = 0;
+..\user\spi_app.c: 3 warnings, 0 errors
+compiling crc.c...
 linking...
-Program Size: Code=3776 RO-data=452 RW-data=12 ZI-data=516  
+Program Size: Code=4912 RO-data=708 RW-data=12 ZI-data=612  
 FromELF: creating hex file...
-".\Objects\ES-AN49503.axf" - 0 Error(s), 7 Warning(s).
+".\Objects\ES-AN49503.axf" - 0 Error(s), 11 Warning(s).
 *** Completed Cross-Module-Optimization after 2 iteration(s).
 
 <h2>Collection of Component include folders:</h2>
@@ -144,7 +166,7 @@ FromELF: creating hex file...
   D:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:26
+Build Time Elapsed:  00:00:20
 </pre>
 </body>
 </html>

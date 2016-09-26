@@ -559,6 +559,16 @@
               <FileType>1</FileType>
               <FilePath>..\user\wdt.c</FilePath>
             </File>
+            <File>
+              <FileName>spi_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\spi_app.c</FilePath>
+            </File>
+            <File>
+              <FileName>crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\crc.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

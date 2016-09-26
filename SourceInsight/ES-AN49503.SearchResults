@@ -1,3 +1,4 @@
----- DISABLE_NMI Matches (2 in 2 files) ----
-Ke06_config.h (e:\github\es-an49503\user):#define DISABLE_NMI                 /*!< disable NMI function */
-Sysinit.c (e:\github\es-an49503\cpu):#if defined(DISABLE_NMI)
+---- SPI_WidthType Matches (3 in 2 files) ----
+Spi.c (e:\github\es-an49503\drivers):ResultType SPI_TransferWait(SPI_Type *pSPI, SPI_WidthType* pRdBuff, SPI_WidthType *pWrBuff,uint32 uiLength)
+Spi.h (e:\github\es-an49503\drivers):typedef uint8_t   SPI_WidthType;  /* SPI width type */
+Spi.h (e:\github\es-an49503\drivers):ResultType SPI_TransferWait(SPI_Type *pSPI, SPI_WidthType* pRdBuff, SPI_WidthType *pWrBuff,uint32 uiLength);

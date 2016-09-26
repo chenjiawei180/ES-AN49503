@@ -32,6 +32,8 @@
 ".\objects\main.o"
 ".\objects\led.o"
 ".\objects\wdt.o"
+".\objects\spi_app.o"
+".\objects\crc_1.o"
 --library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x1FFFF000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\ES-AN49503.map" -o .\Objects\ES-AN49503.axf
