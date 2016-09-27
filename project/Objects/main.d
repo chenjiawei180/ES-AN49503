@@ -15,6 +15,7 @@
 .\objects\main.o: ..\drivers\ics.h
 .\objects\main.o: ..\cpu\sysinit.h
 .\objects\main.o: ..\user\global.h
+.\objects\main.o: ..\drivers\bitband.h
 .\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: ..\drivers\spi.h
 .\objects\main.o: ..\user\led.h
@@ -23,3 +24,4 @@
 .\objects\main.o: ..\drivers\wdog.h
 .\objects\main.o: ..\drivers\sim.h
 .\objects\main.o: ..\user\spi_app.h
+.\objects\main.o: ..\user\eeprom_24c.h

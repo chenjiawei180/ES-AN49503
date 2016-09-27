@@ -569,6 +569,11 @@
               <FileType>1</FileType>
               <FilePath>..\user\crc.c</FilePath>
             </File>
+            <File>
+              <FileName>eeprom_24c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\eeprom_24c.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

@@ -14,6 +14,7 @@
 .\objects\wdt.o: ..\common\io.h
 .\objects\wdt.o: ..\common\startup.h
 .\objects\wdt.o: ..\common\stdlib.h
+.\objects\wdt.o: ..\drivers\bitband.h
 .\objects\wdt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\wdt.o: ..\drivers\spi.h
 .\objects\wdt.o: ..\drivers\wdog.h

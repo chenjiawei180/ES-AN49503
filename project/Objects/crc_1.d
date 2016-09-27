@@ -14,5 +14,6 @@
 .\objects\crc_1.o: ..\common\io.h
 .\objects\crc_1.o: ..\common\startup.h
 .\objects\crc_1.o: ..\common\stdlib.h
+.\objects\crc_1.o: ..\drivers\bitband.h
 .\objects\crc_1.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\crc_1.o: ..\drivers\spi.h

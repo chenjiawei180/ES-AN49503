@@ -14,6 +14,7 @@
 .\objects\spi_app.o: ..\common\io.h
 .\objects\spi_app.o: ..\common\startup.h
 .\objects\spi_app.o: ..\common\stdlib.h
+.\objects\spi_app.o: ..\drivers\bitband.h
 .\objects\spi_app.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\spi_app.o: ..\drivers\spi.h
 .\objects\spi_app.o: ..\user\crc.h

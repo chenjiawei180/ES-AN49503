@@ -235,9 +235,11 @@ Section Cross References
     main.o(i.main) refers to led.o(i.RED_Init) for RED_Init
     main.o(i.main) refers to led.o(i.GREEN_Init) for GREEN_Init
     main.o(i.main) refers to spi_app.o(i.SPI_APP_Init) for SPI_APP_Init
+    main.o(i.main) refers to eeprom_24c.o(i.IIC_Init) for IIC_Init
     main.o(i.main) refers to wdt.o(i.WDT_Clear) for WDT_Clear
+    main.o(i.main) refers to eeprom_24c.o(i.IIC_Send_Buffer) for IIC_Send_Buffer
+    main.o(i.main) refers to eeprom_24c.o(i.IIC_Read_Buffer) for IIC_Read_Buffer
     main.o(i.main) refers to led.o(i.GREEN_On) for GREEN_On
-    main.o(i.main) refers to spi_app.o(i.SPI_Continue_Read) for SPI_Continue_Read
     main.o(i.main) refers to led.o(i.GREEN_Off) for GREEN_Off
     led.o(i.GREEN_Init) refers to gpio.o(i.GPIO_Init) for GPIO_Init
     led.o(i.GREEN_Init) refers to gpio.o(i.GPIO_PinClear) for GPIO_PinClear
@@ -272,6 +274,37 @@ Section Cross References
     spi_app.o(i.SPI_Write) refers to spi_app.o(i.SPI_Dis) for SPI_Dis
     spi_app.o(i.SPI_Write) refers to spi_app.o(i.SPI_Read) for SPI_Read
     crc_1.o(i.CRC_Calc) refers to crc_1.o(.constdata) for CRC_Calc_Tab
+    eeprom_24c.o(i.IIC_Init) refers to gpio.o(i.GPIO_Init) for GPIO_Init
+    eeprom_24c.o(i.IIC_Init) refers to gpio.o(i.GPIO_PinSet) for GPIO_PinSet
+    eeprom_24c.o(i.IIC_Init) refers to gpio.o(i.GPIO_PinClear) for GPIO_PinClear
+    eeprom_24c.o(i.IIC_Read_Buffer) refers to eeprom_24c.o(i.IIC_Start) for IIC_Start
+    eeprom_24c.o(i.IIC_Read_Buffer) refers to eeprom_24c.o(i.IIC_Send_Byte) for IIC_Send_Byte
+    eeprom_24c.o(i.IIC_Read_Buffer) refers to eeprom_24c.o(i.IIC_Receive_Byte) for IIC_Receive_Byte
+    eeprom_24c.o(i.IIC_Read_Buffer) refers to gpio.o(i.GPIO_PinClear) for GPIO_PinClear
+    eeprom_24c.o(i.IIC_Read_Buffer) refers to eeprom_24c.o(i.IIC_Delay) for IIC_Delay
+    eeprom_24c.o(i.IIC_Read_Buffer) refers to gpio.o(i.GPIO_PinSet) for GPIO_PinSet
+    eeprom_24c.o(i.IIC_Read_Buffer) refers to eeprom_24c.o(i.IIC_Stop) for IIC_Stop
+    eeprom_24c.o(i.IIC_Receive_Byte) refers to gpio.o(i.GPIO_PinSet) for GPIO_PinSet
+    eeprom_24c.o(i.IIC_Receive_Byte) refers to eeprom_24c.o(i.IIC_Delay) for IIC_Delay
+    eeprom_24c.o(i.IIC_Receive_Byte) refers to gpio.o(i.GPIO_Init) for GPIO_Init
+    eeprom_24c.o(i.IIC_Receive_Byte) refers to gpio.o(i.GPIO_Read) for GPIO_Read
+    eeprom_24c.o(i.IIC_Receive_Byte) refers to gpio.o(i.GPIO_PinClear) for GPIO_PinClear
+    eeprom_24c.o(i.IIC_Send_Buffer) refers to gpio.o(i.GPIO_PinClear) for GPIO_PinClear
+    eeprom_24c.o(i.IIC_Send_Buffer) refers to eeprom_24c.o(i.IIC_Start) for IIC_Start
+    eeprom_24c.o(i.IIC_Send_Buffer) refers to eeprom_24c.o(i.IIC_Send_Byte) for IIC_Send_Byte
+    eeprom_24c.o(i.IIC_Send_Buffer) refers to eeprom_24c.o(i.IIC_Stop) for IIC_Stop
+    eeprom_24c.o(i.IIC_Send_Buffer) refers to gpio.o(i.GPIO_PinSet) for GPIO_PinSet
+    eeprom_24c.o(i.IIC_Send_Byte) refers to gpio.o(i.GPIO_PinSet) for GPIO_PinSet
+    eeprom_24c.o(i.IIC_Send_Byte) refers to gpio.o(i.GPIO_PinClear) for GPIO_PinClear
+    eeprom_24c.o(i.IIC_Send_Byte) refers to eeprom_24c.o(i.IIC_Delay) for IIC_Delay
+    eeprom_24c.o(i.IIC_Send_Byte) refers to gpio.o(i.GPIO_Init) for GPIO_Init
+    eeprom_24c.o(i.IIC_Send_Byte) refers to gpio.o(i.GPIO_Read) for GPIO_Read
+    eeprom_24c.o(i.IIC_Start) refers to gpio.o(i.GPIO_PinSet) for GPIO_PinSet
+    eeprom_24c.o(i.IIC_Start) refers to eeprom_24c.o(i.IIC_Delay) for IIC_Delay
+    eeprom_24c.o(i.IIC_Start) refers to gpio.o(i.GPIO_PinClear) for GPIO_PinClear
+    eeprom_24c.o(i.IIC_Stop) refers to gpio.o(i.GPIO_PinClear) for GPIO_PinClear
+    eeprom_24c.o(i.IIC_Stop) refers to eeprom_24c.o(i.IIC_Delay) for IIC_Delay
+    eeprom_24c.o(i.IIC_Stop) refers to gpio.o(i.GPIO_PinSet) for GPIO_PinSet
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
@@ -697,7 +730,6 @@ Removing Unused input sections from the image.
     Removing gpio.o(i.GPIO_DeInit), (80 bytes).
     Removing gpio.o(i.GPIO_PinInit), (868 bytes).
     Removing gpio.o(i.GPIO_PinToggle), (104 bytes).
-    Removing gpio.o(i.GPIO_Read), (64 bytes).
     Removing gpio.o(i.GPIO_Toggle), (64 bytes).
     Removing gpio.o(i.GPIO_Write), (68 bytes).
     Removing i2c.o(.rev16_text), (4 bytes).
@@ -822,6 +854,7 @@ Removing Unused input sections from the image.
     Removing spi.o(i.SPI1_Isr), (24 bytes).
     Removing spi.o(i.SPI_DeInit), (26 bytes).
     Removing spi.o(i.SPI_SetCallback), (64 bytes).
+    Removing spi.o(i.SPI_TransferWait), (70 bytes).
     Removing spi.o(.data), (8 bytes).
     Removing uart.o(.rev16_text), (4 bytes).
     Removing uart.o(.revsh_text), (4 bytes).
@@ -849,6 +882,7 @@ Removing Unused input sections from the image.
     Removing wdog.o(i.WDOG_EnableUpdate), (52 bytes).
     Removing main.o(.rev16_text), (4 bytes).
     Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.bss), (100 bytes).
     Removing led.o(.rev16_text), (4 bytes).
     Removing led.o(.revsh_text), (4 bytes).
     Removing led.o(i.GREEN_Toggle), (20 bytes).
@@ -859,10 +893,17 @@ Removing Unused input sections from the image.
     Removing wdt.o(.revsh_text), (4 bytes).
     Removing spi_app.o(.rev16_text), (4 bytes).
     Removing spi_app.o(.revsh_text), (4 bytes).
+    Removing spi_app.o(i.SPI_Continue_Read), (152 bytes).
+    Removing spi_app.o(i.SPI_Dis), (10 bytes).
+    Removing spi_app.o(i.SPI_En), (10 bytes).
     Removing spi_app.o(i.SPI_Read), (136 bytes).
     Removing spi_app.o(i.SPI_Write), (116 bytes).
     Removing crc_1.o(.rev16_text), (4 bytes).
     Removing crc_1.o(.revsh_text), (4 bytes).
+    Removing crc_1.o(i.CRC_Calc), (36 bytes).
+    Removing crc_1.o(.constdata), (256 bytes).
+    Removing eeprom_24c.o(.rev16_text), (4 bytes).
+    Removing eeprom_24c.o(.revsh_text), (4 bytes).
     Removing dadd.o(.text), (356 bytes).
     Removing dmul.o(.text), (208 bytes).
     Removing ddiv.o(.text), (240 bytes).
@@ -871,7 +912,7 @@ Removing Unused input sections from the image.
     Removing depilogue.o(.text), (190 bytes).
     Removing depilogue.o(i.__ARM_clz), (46 bytes).
 
-328 unused section(s) (total 20413 bytes) removed from the image.
+336 unused section(s) (total 20991 bytes) removed from the image.
 
 ==============================================================================
 
@@ -882,36 +923,36 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     .ARM.__AT_0x00000000                     0x00000000   Section      192  vectors.o(.ARM.__AT_0x00000000)
-    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
@@ -952,6 +993,7 @@ Image Symbol Table
     ..\\drivers\\uart.c                      0x00000000   Number         0  uart.o ABSOLUTE
     ..\\drivers\\wdog.c                      0x00000000   Number         0  wdog.o ABSOLUTE
     ..\\user\\crc.c                          0x00000000   Number         0  crc_1.o ABSOLUTE
+    ..\\user\\eeprom_24c.c                   0x00000000   Number         0  eeprom_24c.o ABSOLUTE
     ..\\user\\led.c                          0x00000000   Number         0  led.o ABSOLUTE
     ..\\user\\main.c                         0x00000000   Number         0  main.o ABSOLUTE
     ..\\user\\spi_app.c                      0x00000000   Number         0  spi_app.o ABSOLUTE
@@ -987,6 +1029,7 @@ Image Symbol Table
     ..\drivers\uart.c                        0x00000000   Number         0  uart.o ABSOLUTE
     ..\drivers\wdog.c                        0x00000000   Number         0  wdog.o ABSOLUTE
     ..\user\crc.c                            0x00000000   Number         0  crc_1.o ABSOLUTE
+    ..\user\eeprom_24c.c                     0x00000000   Number         0  eeprom_24c.o ABSOLUTE
     ..\user\led.c                            0x00000000   Number         0  led.o ABSOLUTE
     ..\user\main.c                           0x00000000   Number         0  main.o ABSOLUTE
     ..\user\spi_app.c                        0x00000000   Number         0  spi_app.o ABSOLUTE
@@ -1013,68 +1056,70 @@ Image Symbol Table
     .text                                    0x00000268   Section       36  init.o(.text)
     .text                                    0x0000028c   Section        0  llshl.o(.text)
     .text                                    0x000002ac   Section        0  llushr.o(.text)
-    i.CRC_Calc                               0x000002d0   Section        0  crc_1.o(i.CRC_Calc)
-    i.FEI_to_FBE_OSC                         0x000002f4   Section        0  ics.o(i.FEI_to_FBE_OSC)
-    i.FEI_to_FEE                             0x00000368   Section        0  ics.o(i.FEI_to_FEE)
-    i.GREEN_Init                             0x000003c0   Section        0  led.o(i.GREEN_Init)
-    i.GREEN_Off                              0x000003dc   Section        0  led.o(i.GREEN_Off)
-    i.GREEN_On                               0x000003e6   Section        0  led.o(i.GREEN_On)
-    i.NMI_Isr                                0x000003f0   Section        0  wdt.o(i.NMI_Isr)
-    i.SPI_Dis                                0x000003f4   Section        0  spi_app.o(i.SPI_Dis)
+    i.FEI_to_FBE_OSC                         0x000002d0   Section        0  ics.o(i.FEI_to_FBE_OSC)
+    i.FEI_to_FEE                             0x00000344   Section        0  ics.o(i.FEI_to_FEE)
+    i.FEI_to_FEE_OSC                         0x0000039c   Section        0  ics.o(i.FEI_to_FEE_OSC)
+    i.GREEN_Off                              0x000003f4   Section        0  led.o(i.GREEN_Off)
     i.__scatterload_null                     0x000003fe   Section        2  handlers.o(i.__scatterload_null)
     .ARM.__at_0x400                          0x00000400   Section       16  startup_mke06z4.o(.ARM.__at_0x400)
-    i.FEI_to_FEE_OSC                         0x00000410   Section        0  ics.o(i.FEI_to_FEE_OSC)
-    i.GPIO_Init                              0x00000468   Section        0  gpio.o(i.GPIO_Init)
-    i.GPIO_PinClear                          0x000005fc   Section        0  gpio.o(i.GPIO_PinClear)
-    i.GPIO_PinSet                            0x00000664   Section        0  gpio.o(i.GPIO_PinSet)
-    i.ICS_Init                               0x000006cc   Section        0  ics.o(i.ICS_Init)
-    i.ICS_SetClkDivider                      0x00000730   Section        0  ics.o(i.ICS_SetClkDivider)
-    i.ICS_Trim                               0x000007c4   Section        0  ics.o(i.ICS_Trim)
-    i.NVIC_EnableIRQ                         0x000007f0   Section        0  spi.o(i.NVIC_EnableIRQ)
-    NVIC_EnableIRQ                           0x000007f1   Thumb Code    14  spi.o(i.NVIC_EnableIRQ)
-    i.OSC_Init                               0x00000804   Section        0  ics.o(i.OSC_Init)
-    i.RED_Init                               0x00000870   Section        0  led.o(i.RED_Init)
-    i.RTC_ClrFlags                           0x0000088c   Section        0  rtc.o(i.RTC_ClrFlags)
-    RTC_ClrFlags                             0x0000088d   Thumb Code    14  rtc.o(i.RTC_ClrFlags)
-    i.RTC_Isr                                0x000008a0   Section        0  rtc.o(i.RTC_Isr)
-    i.SIM_Init                               0x000008bc   Section        0  sim.o(i.SIM_Init)
-    i.SPI_APP_Init                           0x00000988   Section        0  spi_app.o(i.SPI_APP_Init)
-    i.SPI_Continue_Read                      0x000009f0   Section        0  spi_app.o(i.SPI_Continue_Read)
-    i.SPI_En                                 0x00000a88   Section        0  spi_app.o(i.SPI_En)
-    i.SPI_Init                               0x00000a94   Section        0  spi.o(i.SPI_Init)
-    i.SPI_ModfEnable                         0x00000c90   Section        0  spi.o(i.SPI_ModfEnable)
-    SPI_ModfEnable                           0x00000c91   Thumb Code    10  spi.o(i.SPI_ModfEnable)
-    i.SPI_SetBaudRate                        0x00000c9a   Section        0  spi.o(i.SPI_SetBaudRate)
-    i.SPI_TransferWait                       0x00000d04   Section        0  spi.o(i.SPI_TransferWait)
-    i.SystemInit                             0x00000d4a   Section        0  start.o(i.SystemInit)
-    i.UART_PutChar                           0x00000d52   Section        0  uart.o(i.UART_PutChar)
-    i.WDOG_DisableWDOGEnableUpdate           0x00000d64   Section        0  wdog.o(i.WDOG_DisableWDOGEnableUpdate)
-    i.WDOG_Feed                              0x00000da0   Section        0  wdog.o(i.WDOG_Feed)
-    i.WDOG_Init                              0x00000dbc   Section        0  wdog.o(i.WDOG_Init)
-    i.WDT_Clear                              0x00000e70   Section        0  wdt.o(i.WDT_Clear)
-    i.WDT_Init                               0x00000e78   Section        0  wdt.o(i.WDT_Init)
-    i.__0printf$8                            0x00000edc   Section        0  printf8.o(i.__0printf$8)
-    i.__scatterload_copy                     0x00000efc   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_zeroinit                 0x00000f0a   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x00000f18   Section        0  printf8.o(i._printf_core)
-    _printf_core                             0x00000f19   Thumb Code  1020  printf8.o(i._printf_core)
-    i._printf_post_padding                   0x00001340   Section        0  printf8.o(i._printf_post_padding)
-    _printf_post_padding                     0x00001341   Thumb Code    32  printf8.o(i._printf_post_padding)
-    i._printf_pre_padding                    0x00001360   Section        0  printf8.o(i._printf_pre_padding)
-    _printf_pre_padding                      0x00001361   Thumb Code    44  printf8.o(i._printf_pre_padding)
-    i.assert_failed                          0x0000138c   Section        0  assert.o(i.assert_failed)
-    i.default_isr                            0x000013bc   Section        0  vectors.o(i.default_isr)
-    i.fputc                                  0x000013be   Section        0  io.o(i.fputc)
-    i.main                                   0x000013d0   Section        0  main.o(i.main)
-    i.out_char                               0x00001424   Section        0  io.o(i.out_char)
-    i.sysinit                                0x00001438   Section        0  sysinit.o(i.sysinit)
-    .constdata                               0x000014b0   Section       35  assert.o(.constdata)
-    .constdata                               0x000014d3   Section      256  crc_1.o(.constdata)
+    i.GPIO_Init                              0x00000410   Section        0  gpio.o(i.GPIO_Init)
+    i.GPIO_PinClear                          0x000005a4   Section        0  gpio.o(i.GPIO_PinClear)
+    i.GPIO_PinSet                            0x0000060c   Section        0  gpio.o(i.GPIO_PinSet)
+    i.GPIO_Read                              0x00000674   Section        0  gpio.o(i.GPIO_Read)
+    i.GREEN_Init                             0x000006b4   Section        0  led.o(i.GREEN_Init)
+    i.GREEN_On                               0x000006d0   Section        0  led.o(i.GREEN_On)
+    i.ICS_Init                               0x000006dc   Section        0  ics.o(i.ICS_Init)
+    i.ICS_SetClkDivider                      0x00000740   Section        0  ics.o(i.ICS_SetClkDivider)
+    i.ICS_Trim                               0x000007d4   Section        0  ics.o(i.ICS_Trim)
+    i.IIC_Delay                              0x00000800   Section        0  eeprom_24c.o(i.IIC_Delay)
+    i.IIC_Init                               0x00000810   Section        0  eeprom_24c.o(i.IIC_Init)
+    i.IIC_Read_Buffer                        0x00000848   Section        0  eeprom_24c.o(i.IIC_Read_Buffer)
+    i.IIC_Receive_Byte                       0x000008f8   Section        0  eeprom_24c.o(i.IIC_Receive_Byte)
+    i.IIC_Send_Buffer                        0x0000095c   Section        0  eeprom_24c.o(i.IIC_Send_Buffer)
+    i.IIC_Send_Byte                          0x000009e0   Section        0  eeprom_24c.o(i.IIC_Send_Byte)
+    i.IIC_Start                              0x00000a80   Section        0  eeprom_24c.o(i.IIC_Start)
+    i.IIC_Stop                               0x00000aac   Section        0  eeprom_24c.o(i.IIC_Stop)
+    i.NMI_Isr                                0x00000ad8   Section        0  wdt.o(i.NMI_Isr)
+    i.NVIC_EnableIRQ                         0x00000adc   Section        0  spi.o(i.NVIC_EnableIRQ)
+    NVIC_EnableIRQ                           0x00000add   Thumb Code    14  spi.o(i.NVIC_EnableIRQ)
+    i.OSC_Init                               0x00000af0   Section        0  ics.o(i.OSC_Init)
+    i.RED_Init                               0x00000b5c   Section        0  led.o(i.RED_Init)
+    i.RTC_ClrFlags                           0x00000b78   Section        0  rtc.o(i.RTC_ClrFlags)
+    RTC_ClrFlags                             0x00000b79   Thumb Code    14  rtc.o(i.RTC_ClrFlags)
+    i.RTC_Isr                                0x00000b8c   Section        0  rtc.o(i.RTC_Isr)
+    i.SIM_Init                               0x00000ba8   Section        0  sim.o(i.SIM_Init)
+    i.SPI_APP_Init                           0x00000c74   Section        0  spi_app.o(i.SPI_APP_Init)
+    i.SPI_Init                               0x00000cdc   Section        0  spi.o(i.SPI_Init)
+    i.SPI_ModfEnable                         0x00000ed8   Section        0  spi.o(i.SPI_ModfEnable)
+    SPI_ModfEnable                           0x00000ed9   Thumb Code    10  spi.o(i.SPI_ModfEnable)
+    i.SPI_SetBaudRate                        0x00000ee2   Section        0  spi.o(i.SPI_SetBaudRate)
+    i.SystemInit                             0x00000f4c   Section        0  start.o(i.SystemInit)
+    i.UART_PutChar                           0x00000f54   Section        0  uart.o(i.UART_PutChar)
+    i.WDOG_DisableWDOGEnableUpdate           0x00000f64   Section        0  wdog.o(i.WDOG_DisableWDOGEnableUpdate)
+    i.WDOG_Feed                              0x00000fa0   Section        0  wdog.o(i.WDOG_Feed)
+    i.WDOG_Init                              0x00000fbc   Section        0  wdog.o(i.WDOG_Init)
+    i.WDT_Clear                              0x00001070   Section        0  wdt.o(i.WDT_Clear)
+    i.WDT_Init                               0x00001078   Section        0  wdt.o(i.WDT_Init)
+    i.__0printf$8                            0x000010dc   Section        0  printf8.o(i.__0printf$8)
+    i.__scatterload_copy                     0x000010fc   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_zeroinit                 0x0000110a   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x00001118   Section        0  printf8.o(i._printf_core)
+    _printf_core                             0x00001119   Thumb Code  1020  printf8.o(i._printf_core)
+    i._printf_post_padding                   0x00001540   Section        0  printf8.o(i._printf_post_padding)
+    _printf_post_padding                     0x00001541   Thumb Code    32  printf8.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x00001560   Section        0  printf8.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x00001561   Thumb Code    44  printf8.o(i._printf_pre_padding)
+    i.assert_failed                          0x0000158c   Section        0  assert.o(i.assert_failed)
+    i.default_isr                            0x000015bc   Section        0  vectors.o(i.default_isr)
+    i.fputc                                  0x000015be   Section        0  io.o(i.fputc)
+    i.main                                   0x000015d0   Section        0  main.o(i.main)
+    i.out_char                               0x00001664   Section        0  io.o(i.out_char)
+    i.sysinit                                0x00001678   Section        0  sysinit.o(i.sysinit)
+    .constdata                               0x000016f0   Section       35  assert.o(.constdata)
     .data                                    0x1ffff000   Section        4  sysinit.o(.data)
     .data                                    0x1ffff004   Section        4  rtc.o(.data)
     .data                                    0x1ffff008   Section        4  stdout.o(.data)
-    .bss                                     0x1ffff00c   Section      100  main.o(.bss)
-    STACK                                    0x1ffff070   Section      512  startup_mke06z4.o(STACK)
+    STACK                                    0x1ffff010   Section      512  startup_mke06z4.o(STACK)
 
     Global Symbols
 
@@ -1202,60 +1247,62 @@ Image Symbol Table
     _ll_shift_l                              0x0000028d   Thumb Code     0  llshl.o(.text)
     __aeabi_llsr                             0x000002ad   Thumb Code    34  llushr.o(.text)
     _ll_ushift_r                             0x000002ad   Thumb Code     0  llushr.o(.text)
-    CRC_Calc                                 0x000002d1   Thumb Code    32  crc_1.o(i.CRC_Calc)
-    FEI_to_FBE_OSC                           0x000002f5   Thumb Code   112  ics.o(i.FEI_to_FBE_OSC)
-    FEI_to_FEE                               0x00000369   Thumb Code    84  ics.o(i.FEI_to_FEE)
-    GREEN_Init                               0x000003c1   Thumb Code    22  led.o(i.GREEN_Init)
-    GREEN_Off                                0x000003dd   Thumb Code    10  led.o(i.GREEN_Off)
-    GREEN_On                                 0x000003e7   Thumb Code    10  led.o(i.GREEN_On)
-    NMI_Isr                                  0x000003f1   Thumb Code     4  wdt.o(i.NMI_Isr)
-    SPI_Dis                                  0x000003f5   Thumb Code    10  spi_app.o(i.SPI_Dis)
+    FEI_to_FBE_OSC                           0x000002d1   Thumb Code   112  ics.o(i.FEI_to_FBE_OSC)
+    FEI_to_FEE                               0x00000345   Thumb Code    84  ics.o(i.FEI_to_FEE)
+    FEI_to_FEE_OSC                           0x0000039d   Thumb Code    84  ics.o(i.FEI_to_FEE_OSC)
+    GREEN_Off                                0x000003f5   Thumb Code    10  led.o(i.GREEN_Off)
     __scatterload_null                       0x000003ff   Thumb Code     2  handlers.o(i.__scatterload_null)
-    FEI_to_FEE_OSC                           0x00000411   Thumb Code    84  ics.o(i.FEI_to_FEE_OSC)
-    GPIO_Init                                0x00000469   Thumb Code   376  gpio.o(i.GPIO_Init)
-    GPIO_PinClear                            0x000005fd   Thumb Code    74  gpio.o(i.GPIO_PinClear)
-    GPIO_PinSet                              0x00000665   Thumb Code    74  gpio.o(i.GPIO_PinSet)
-    ICS_Init                                 0x000006cd   Thumb Code    96  ics.o(i.ICS_Init)
-    ICS_SetClkDivider                        0x00000731   Thumb Code   136  ics.o(i.ICS_SetClkDivider)
-    ICS_Trim                                 0x000007c5   Thumb Code    38  ics.o(i.ICS_Trim)
-    OSC_Init                                 0x00000805   Thumb Code   102  ics.o(i.OSC_Init)
-    RED_Init                                 0x00000871   Thumb Code    22  led.o(i.RED_Init)
-    RTC_Isr                                  0x000008a1   Thumb Code    22  rtc.o(i.RTC_Isr)
-    SIM_Init                                 0x000008bd   Thumb Code   200  sim.o(i.SIM_Init)
-    SPI_APP_Init                             0x00000989   Thumb Code    88  spi_app.o(i.SPI_APP_Init)
-    SPI_Continue_Read                        0x000009f1   Thumb Code   144  spi_app.o(i.SPI_Continue_Read)
-    SPI_En                                   0x00000a89   Thumb Code    10  spi_app.o(i.SPI_En)
-    SPI_Init                                 0x00000a95   Thumb Code   474  spi.o(i.SPI_Init)
-    SPI_SetBaudRate                          0x00000c9b   Thumb Code   106  spi.o(i.SPI_SetBaudRate)
-    SPI_TransferWait                         0x00000d05   Thumb Code    70  spi.o(i.SPI_TransferWait)
-    SystemInit                               0x00000d4b   Thumb Code     8  start.o(i.SystemInit)
-    UART_PutChar                             0x00000d53   Thumb Code    16  uart.o(i.UART_PutChar)
-    WDOG_DisableWDOGEnableUpdate             0x00000d65   Thumb Code    46  wdog.o(i.WDOG_DisableWDOGEnableUpdate)
-    WDOG_Feed                                0x00000da1   Thumb Code    16  wdog.o(i.WDOG_Feed)
-    WDOG_Init                                0x00000dbd   Thumb Code   168  wdog.o(i.WDOG_Init)
-    WDT_Clear                                0x00000e71   Thumb Code     8  wdt.o(i.WDT_Clear)
-    WDT_Init                                 0x00000e79   Thumb Code   100  wdt.o(i.WDT_Init)
-    __0printf$8                              0x00000edd   Thumb Code    24  printf8.o(i.__0printf$8)
-    __1printf$8                              0x00000edd   Thumb Code     0  printf8.o(i.__0printf$8)
-    __2printf                                0x00000edd   Thumb Code     0  printf8.o(i.__0printf$8)
-    __scatterload_copy                       0x00000efd   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_zeroinit                   0x00000f0b   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    assert_failed                            0x0000138d   Thumb Code    38  assert.o(i.assert_failed)
-    default_isr                              0x000013bd   Thumb Code     2  vectors.o(i.default_isr)
-    fputc                                    0x000013bf   Thumb Code    16  io.o(i.fputc)
-    main                                     0x000013d1   Thumb Code    78  main.o(i.main)
-    out_char                                 0x00001425   Thumb Code    14  io.o(i.out_char)
-    sysinit                                  0x00001439   Thumb Code   106  sysinit.o(i.sysinit)
-    ASSERT_FAILED_STR                        0x000014b0   Data          35  assert.o(.constdata)
-    CRC_Calc_Tab                             0x000014d3   Data         256  crc_1.o(.constdata)
-    Region$$Table$$Base                      0x000015d4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x000015f4   Number         0  anon$$obj.o(Region$$Table)
+    GPIO_Init                                0x00000411   Thumb Code   376  gpio.o(i.GPIO_Init)
+    GPIO_PinClear                            0x000005a5   Thumb Code    74  gpio.o(i.GPIO_PinClear)
+    GPIO_PinSet                              0x0000060d   Thumb Code    74  gpio.o(i.GPIO_PinSet)
+    GPIO_Read                                0x00000675   Thumb Code    40  gpio.o(i.GPIO_Read)
+    GREEN_Init                               0x000006b5   Thumb Code    22  led.o(i.GREEN_Init)
+    GREEN_On                                 0x000006d1   Thumb Code    10  led.o(i.GREEN_On)
+    ICS_Init                                 0x000006dd   Thumb Code    96  ics.o(i.ICS_Init)
+    ICS_SetClkDivider                        0x00000741   Thumb Code   136  ics.o(i.ICS_SetClkDivider)
+    ICS_Trim                                 0x000007d5   Thumb Code    38  ics.o(i.ICS_Trim)
+    IIC_Delay                                0x00000801   Thumb Code    14  eeprom_24c.o(i.IIC_Delay)
+    IIC_Init                                 0x00000811   Thumb Code    52  eeprom_24c.o(i.IIC_Init)
+    IIC_Read_Buffer                          0x00000849   Thumb Code   176  eeprom_24c.o(i.IIC_Read_Buffer)
+    IIC_Receive_Byte                         0x000008f9   Thumb Code    96  eeprom_24c.o(i.IIC_Receive_Byte)
+    IIC_Send_Buffer                          0x0000095d   Thumb Code   126  eeprom_24c.o(i.IIC_Send_Buffer)
+    IIC_Send_Byte                            0x000009e1   Thumb Code   156  eeprom_24c.o(i.IIC_Send_Byte)
+    IIC_Start                                0x00000a81   Thumb Code    44  eeprom_24c.o(i.IIC_Start)
+    IIC_Stop                                 0x00000aad   Thumb Code    44  eeprom_24c.o(i.IIC_Stop)
+    NMI_Isr                                  0x00000ad9   Thumb Code     4  wdt.o(i.NMI_Isr)
+    OSC_Init                                 0x00000af1   Thumb Code   102  ics.o(i.OSC_Init)
+    RED_Init                                 0x00000b5d   Thumb Code    22  led.o(i.RED_Init)
+    RTC_Isr                                  0x00000b8d   Thumb Code    22  rtc.o(i.RTC_Isr)
+    SIM_Init                                 0x00000ba9   Thumb Code   200  sim.o(i.SIM_Init)
+    SPI_APP_Init                             0x00000c75   Thumb Code    88  spi_app.o(i.SPI_APP_Init)
+    SPI_Init                                 0x00000cdd   Thumb Code   474  spi.o(i.SPI_Init)
+    SPI_SetBaudRate                          0x00000ee3   Thumb Code   106  spi.o(i.SPI_SetBaudRate)
+    SystemInit                               0x00000f4d   Thumb Code     8  start.o(i.SystemInit)
+    UART_PutChar                             0x00000f55   Thumb Code    16  uart.o(i.UART_PutChar)
+    WDOG_DisableWDOGEnableUpdate             0x00000f65   Thumb Code    46  wdog.o(i.WDOG_DisableWDOGEnableUpdate)
+    WDOG_Feed                                0x00000fa1   Thumb Code    16  wdog.o(i.WDOG_Feed)
+    WDOG_Init                                0x00000fbd   Thumb Code   168  wdog.o(i.WDOG_Init)
+    WDT_Clear                                0x00001071   Thumb Code     8  wdt.o(i.WDT_Clear)
+    WDT_Init                                 0x00001079   Thumb Code   100  wdt.o(i.WDT_Init)
+    __0printf$8                              0x000010dd   Thumb Code    24  printf8.o(i.__0printf$8)
+    __1printf$8                              0x000010dd   Thumb Code     0  printf8.o(i.__0printf$8)
+    __2printf                                0x000010dd   Thumb Code     0  printf8.o(i.__0printf$8)
+    __scatterload_copy                       0x000010fd   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_zeroinit                   0x0000110b   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    assert_failed                            0x0000158d   Thumb Code    38  assert.o(i.assert_failed)
+    default_isr                              0x000015bd   Thumb Code     2  vectors.o(i.default_isr)
+    fputc                                    0x000015bf   Thumb Code    16  io.o(i.fputc)
+    main                                     0x000015d1   Thumb Code   136  main.o(i.main)
+    out_char                                 0x00001665   Thumb Code    14  io.o(i.out_char)
+    sysinit                                  0x00001679   Thumb Code   106  sysinit.o(i.sysinit)
+    ASSERT_FAILED_STR                        0x000016f0   Data          35  assert.o(.constdata)
+    Region$$Table$$Base                      0x00001714   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001734   Number         0  anon$$obj.o(Region$$Table)
     global_pass_count                        0x1ffff000   Data           2  sysinit.o(.data)
     global_fail_count                        0x1ffff002   Data           2  sysinit.o(.data)
     RTC_Callback                             0x1ffff004   Data           4  rtc.o(.data)
     __stdout                                 0x1ffff008   Data           4  stdout.o(.data)
-    SPI_Conti_RecvData                       0x1ffff00c   Data         100  main.o(.bss)
-    __initial_sp                             0x1ffff270   Data           0  startup_mke06z4.o(STACK)
+    __initial_sp                             0x1ffff210   Data           0  startup_mke06z4.o(STACK)
 
 
 
@@ -1265,87 +1312,90 @@ Memory Map of the image
 
   Image Entry point : 0x00000195
 
-  Load Region LR_1 (Base: 0x00000000, Size: 0x00001600, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00001740, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Base: 0x00000000, Size: 0x000015f4, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Base: 0x00000000, Size: 0x00001734, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00000000   0x000000c0   Data   RO          502    .ARM.__AT_0x00000000  vectors.o
     0x000000c0   0x000000c0   Data   RO          541    RESET               startup_mke06z4.o
-    0x00000180   0x00000000   Code   RO         2347  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x00000180   0x00000004   Code   RO         2621    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
-    0x00000184   0x00000004   Code   RO         2624    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x00000188   0x00000000   Code   RO         2626    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x00000188   0x00000000   Code   RO         2628    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x00000188   0x00000008   Code   RO         2629    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x00000190   0x00000000   Code   RO         2631    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
-    0x00000190   0x00000000   Code   RO         2633    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
-    0x00000190   0x00000004   Code   RO         2622    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x00000180   0x00000000   Code   RO         2415  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x00000180   0x00000004   Code   RO         2689    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x00000184   0x00000004   Code   RO         2692    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x00000188   0x00000000   Code   RO         2694    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x00000188   0x00000000   Code   RO         2696    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x00000188   0x00000008   Code   RO         2697    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x00000190   0x00000000   Code   RO         2699    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x00000190   0x00000000   Code   RO         2701    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x00000190   0x00000004   Code   RO         2690    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
     0x00000194   0x00000024   Code   RO          543  * .text               startup_mke06z4.o
-    0x000001b8   0x0000002c   Code   RO         2350    .text               mc_p.l(uidiv.o)
-    0x000001e4   0x00000024   Code   RO         2356    .text               mc_p.l(memseta.o)
-    0x00000208   0x00000060   Code   RO         2636    .text               mc_p.l(uldiv.o)
-    0x00000268   0x00000024   Code   RO         2649    .text               mc_p.l(init.o)
-    0x0000028c   0x00000020   Code   RO         2651    .text               mc_p.l(llshl.o)
-    0x000002ac   0x00000022   Code   RO         2653    .text               mc_p.l(llushr.o)
+    0x000001b8   0x0000002c   Code   RO         2418    .text               mc_p.l(uidiv.o)
+    0x000001e4   0x00000024   Code   RO         2424    .text               mc_p.l(memseta.o)
+    0x00000208   0x00000060   Code   RO         2704    .text               mc_p.l(uldiv.o)
+    0x00000268   0x00000024   Code   RO         2717    .text               mc_p.l(init.o)
+    0x0000028c   0x00000020   Code   RO         2719    .text               mc_p.l(llshl.o)
+    0x000002ac   0x00000022   Code   RO         2721    .text               mc_p.l(llushr.o)
     0x000002ce   0x00000002   PAD
-    0x000002d0   0x00000024   Code   RO         2326    i.CRC_Calc          crc_1.o
-    0x000002f4   0x00000074   Code   RO         1297    i.FEI_to_FBE_OSC    ics.o
-    0x00000368   0x00000058   Code   RO         1299    i.FEI_to_FEE        ics.o
-    0x000003c0   0x0000001c   Code   RO         2175    i.GREEN_Init        led.o
-    0x000003dc   0x0000000a   Code   RO         2176    i.GREEN_Off         led.o
-    0x000003e6   0x0000000a   Code   RO         2177    i.GREEN_On          led.o
-    0x000003f0   0x00000004   Code   RO         2241    i.NMI_Isr           wdt.o
-    0x000003f4   0x0000000a   Code   RO         2275    i.SPI_Dis           spi_app.o
-    0x000003fe   0x00000002   Code   RO         2664    i.__scatterload_null  mc_p.l(handlers.o)
+    0x000002d0   0x00000074   Code   RO         1297    i.FEI_to_FBE_OSC    ics.o
+    0x00000344   0x00000058   Code   RO         1299    i.FEI_to_FEE        ics.o
+    0x0000039c   0x00000058   Code   RO         1300    i.FEI_to_FEE_OSC    ics.o
+    0x000003f4   0x0000000a   Code   RO         2182    i.GREEN_Off         led.o
+    0x000003fe   0x00000002   Code   RO         2732    i.__scatterload_null  mc_p.l(handlers.o)
     0x00000400   0x00000010   Code   RO          542    .ARM.__at_0x400     startup_mke06z4.o
-    0x00000410   0x00000058   Code   RO         1300    i.FEI_to_FEE_OSC    ics.o
-    0x00000468   0x00000194   Code   RO         1062    i.GPIO_Init         gpio.o
-    0x000005fc   0x00000068   Code   RO         1063    i.GPIO_PinClear     gpio.o
-    0x00000664   0x00000068   Code   RO         1065    i.GPIO_PinSet       gpio.o
-    0x000006cc   0x00000064   Code   RO         1302    i.ICS_Init          ics.o
-    0x00000730   0x00000094   Code   RO         1303    i.ICS_SetClkDivider  ics.o
-    0x000007c4   0x0000002c   Code   RO         1304    i.ICS_Trim          ics.o
-    0x000007f0   0x00000014   Code   RO         1887    i.NVIC_EnableIRQ    spi.o
-    0x00000804   0x0000006c   Code   RO         1307    i.OSC_Init          ics.o
-    0x00000870   0x0000001c   Code   RO         2179    i.RED_Init          led.o
-    0x0000088c   0x00000014   Code   RO         1796    i.RTC_ClrFlags      rtc.o
-    0x000008a0   0x0000001c   Code   RO         1799    i.RTC_Isr           rtc.o
-    0x000008bc   0x000000cc   Code   RO         1850    i.SIM_Init          sim.o
-    0x00000988   0x00000068   Code   RO         2273    i.SPI_APP_Init      spi_app.o
-    0x000009f0   0x00000098   Code   RO         2274    i.SPI_Continue_Read  spi_app.o
-    0x00000a88   0x0000000a   Code   RO         2276    i.SPI_En            spi_app.o
-    0x00000a92   0x00000002   PAD
-    0x00000a94   0x000001fc   Code   RO         1891    i.SPI_Init          spi.o
-    0x00000c90   0x0000000a   Code   RO         1892    i.SPI_ModfEnable    spi.o
-    0x00000c9a   0x0000006a   Code   RO         1893    i.SPI_SetBaudRate   spi.o
-    0x00000d04   0x00000046   Code   RO         1895    i.SPI_TransferWait  spi.o
-    0x00000d4a   0x00000008   Code   RO          372    i.SystemInit        start.o
-    0x00000d52   0x00000010   Code   RO         1968    i.UART_PutChar      uart.o
-    0x00000d62   0x00000002   PAD
-    0x00000d64   0x0000003c   Code   RO         2072    i.WDOG_DisableWDOGEnableUpdate  wdog.o
-    0x00000da0   0x0000001c   Code   RO         2075    i.WDOG_Feed         wdog.o
-    0x00000dbc   0x000000b4   Code   RO         2076    i.WDOG_Init         wdog.o
-    0x00000e70   0x00000008   Code   RO         2242    i.WDT_Clear         wdt.o
-    0x00000e78   0x00000064   Code   RO         2243    i.WDT_Init          wdt.o
-    0x00000edc   0x00000020   Code   RO         2567    i.__0printf$8       mc_p.l(printf8.o)
-    0x00000efc   0x0000000e   Code   RO         2663    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x00000f0a   0x0000000e   Code   RO         2665    i.__scatterload_zeroinit  mc_p.l(handlers.o)
-    0x00000f18   0x00000428   Code   RO         2574    i._printf_core      mc_p.l(printf8.o)
-    0x00001340   0x00000020   Code   RO         2575    i._printf_post_padding  mc_p.l(printf8.o)
-    0x00001360   0x0000002c   Code   RO         2576    i._printf_pre_padding  mc_p.l(printf8.o)
-    0x0000138c   0x00000030   Code   RO           76    i.assert_failed     assert.o
-    0x000013bc   0x00000002   Code   RO          500    i.default_isr       vectors.o
-    0x000013be   0x00000010   Code   RO          100    i.fputc             io.o
-    0x000013ce   0x00000002   PAD
-    0x000013d0   0x00000054   Code   RO         2131    i.main              main.o
-    0x00001424   0x00000014   Code   RO          102    i.out_char          io.o
-    0x00001438   0x00000078   Code   RO          416    i.sysinit           sysinit.o
-    0x000014b0   0x00000023   Data   RO           77    .constdata          assert.o
-    0x000014d3   0x00000100   Data   RO         2327    .constdata          crc_1.o
-    0x000015d3   0x00000001   PAD
-    0x000015d4   0x00000020   Data   RO         2661    Region$$Table       anon$$obj.o
+    0x00000410   0x00000194   Code   RO         1062    i.GPIO_Init         gpio.o
+    0x000005a4   0x00000068   Code   RO         1063    i.GPIO_PinClear     gpio.o
+    0x0000060c   0x00000068   Code   RO         1065    i.GPIO_PinSet       gpio.o
+    0x00000674   0x00000040   Code   RO         1067    i.GPIO_Read         gpio.o
+    0x000006b4   0x0000001c   Code   RO         2181    i.GREEN_Init        led.o
+    0x000006d0   0x0000000a   Code   RO         2183    i.GREEN_On          led.o
+    0x000006da   0x00000002   PAD
+    0x000006dc   0x00000064   Code   RO         1302    i.ICS_Init          ics.o
+    0x00000740   0x00000094   Code   RO         1303    i.ICS_SetClkDivider  ics.o
+    0x000007d4   0x0000002c   Code   RO         1304    i.ICS_Trim          ics.o
+    0x00000800   0x0000000e   Code   RO         2355    i.IIC_Delay         eeprom_24c.o
+    0x0000080e   0x00000002   PAD
+    0x00000810   0x00000038   Code   RO         2356    i.IIC_Init          eeprom_24c.o
+    0x00000848   0x000000b0   Code   RO         2357    i.IIC_Read_Buffer   eeprom_24c.o
+    0x000008f8   0x00000064   Code   RO         2358    i.IIC_Receive_Byte  eeprom_24c.o
+    0x0000095c   0x00000084   Code   RO         2359    i.IIC_Send_Buffer   eeprom_24c.o
+    0x000009e0   0x000000a0   Code   RO         2360    i.IIC_Send_Byte     eeprom_24c.o
+    0x00000a80   0x0000002c   Code   RO         2361    i.IIC_Start         eeprom_24c.o
+    0x00000aac   0x0000002c   Code   RO         2362    i.IIC_Stop          eeprom_24c.o
+    0x00000ad8   0x00000004   Code   RO         2247    i.NMI_Isr           wdt.o
+    0x00000adc   0x00000014   Code   RO         1887    i.NVIC_EnableIRQ    spi.o
+    0x00000af0   0x0000006c   Code   RO         1307    i.OSC_Init          ics.o
+    0x00000b5c   0x0000001c   Code   RO         2185    i.RED_Init          led.o
+    0x00000b78   0x00000014   Code   RO         1796    i.RTC_ClrFlags      rtc.o
+    0x00000b8c   0x0000001c   Code   RO         1799    i.RTC_Isr           rtc.o
+    0x00000ba8   0x000000cc   Code   RO         1850    i.SIM_Init          sim.o
+    0x00000c74   0x00000068   Code   RO         2279    i.SPI_APP_Init      spi_app.o
+    0x00000cdc   0x000001fc   Code   RO         1891    i.SPI_Init          spi.o
+    0x00000ed8   0x0000000a   Code   RO         1892    i.SPI_ModfEnable    spi.o
+    0x00000ee2   0x0000006a   Code   RO         1893    i.SPI_SetBaudRate   spi.o
+    0x00000f4c   0x00000008   Code   RO          372    i.SystemInit        start.o
+    0x00000f54   0x00000010   Code   RO         1968    i.UART_PutChar      uart.o
+    0x00000f64   0x0000003c   Code   RO         2072    i.WDOG_DisableWDOGEnableUpdate  wdog.o
+    0x00000fa0   0x0000001c   Code   RO         2075    i.WDOG_Feed         wdog.o
+    0x00000fbc   0x000000b4   Code   RO         2076    i.WDOG_Init         wdog.o
+    0x00001070   0x00000008   Code   RO         2248    i.WDT_Clear         wdt.o
+    0x00001078   0x00000064   Code   RO         2249    i.WDT_Init          wdt.o
+    0x000010dc   0x00000020   Code   RO         2635    i.__0printf$8       mc_p.l(printf8.o)
+    0x000010fc   0x0000000e   Code   RO         2731    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x0000110a   0x0000000e   Code   RO         2733    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00001118   0x00000428   Code   RO         2642    i._printf_core      mc_p.l(printf8.o)
+    0x00001540   0x00000020   Code   RO         2643    i._printf_post_padding  mc_p.l(printf8.o)
+    0x00001560   0x0000002c   Code   RO         2644    i._printf_pre_padding  mc_p.l(printf8.o)
+    0x0000158c   0x00000030   Code   RO           76    i.assert_failed     assert.o
+    0x000015bc   0x00000002   Code   RO          500    i.default_isr       vectors.o
+    0x000015be   0x00000010   Code   RO          100    i.fputc             io.o
+    0x000015ce   0x00000002   PAD
+    0x000015d0   0x00000094   Code   RO         2131    i.main              main.o
+    0x00001664   0x00000014   Code   RO          102    i.out_char          io.o
+    0x00001678   0x00000078   Code   RO          416    i.sysinit           sysinit.o
+    0x000016f0   0x00000023   Data   RO           77    .constdata          assert.o
+    0x00001713   0x00000001   PAD
+    0x00001714   0x00000020   Data   RO         2729    Region$$Table       anon$$obj.o
 
 
     Execution Region ER_RW (Base: 0x1ffff000, Size: 0x0000000c, Max: 0xffffffff, ABSOLUTE)
@@ -1354,15 +1404,15 @@ Memory Map of the image
 
     0x1ffff000   0x00000004   Data   RW          418    .data               sysinit.o
     0x1ffff004   0x00000004   Data   RW         1801    .data               rtc.o
-    0x1ffff008   0x00000004   Data   RW         2635    .data               mc_p.l(stdout.o)
+    0x1ffff008   0x00000004   Data   RW         2703    .data               mc_p.l(stdout.o)
 
 
-    Execution Region ER_ZI (Base: 0x1ffff00c, Size: 0x00000264, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Base: 0x1ffff00c, Size: 0x00000204, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x1ffff00c   0x00000064   Zero   RW         2132    .bss                main.o
-    0x1ffff070   0x00000200   Zero   RW          539    STACK               startup_mke06z4.o
+    0x1ffff00c   0x00000004   PAD
+    0x1ffff010   0x00000200   Zero   RW          539    STACK               startup_mke06z4.o
 
 
 ==============================================================================
@@ -1375,16 +1425,16 @@ Image component sizes
          0          0          0          0          0       5744   adc.o
          0          0          0          0          0      83388   alloc.o
         48         10         35          0          0       1008   assert.o
-        36          4        256          0          0        986   crc_1.o
-       612         88          0          0          0       4946   gpio.o
+       726         18          0          0          0       4677   eeprom_24c.o
+       676        112          0          0          0       5422   gpio.o
        692         40          0          0          0       4940   ics.o
         36          6          0          0          0       6999   io.o
         76         12          0          0          0       1531   led.o
-        84          6          0          0        100       7204   main.o
+       148         12          0          0          0       6759   main.o
         48         12          0          4          0       2257   rtc.o
        204          4          0          0          0        891   sim.o
-       714         40          0          0          0       6756   spi.o
-       276         24          0          0          0       2030   spi_app.o
+       644         40          0          0          0       5765   spi.o
+       104         16          0          0          0        451   spi_app.o
          8          0          0          0          0        389   start.o
         52         24        192          0        512        932   startup_mke06z4.o
        120         14          0          4          0       1928   sysinit.o
@@ -1394,7 +1444,7 @@ Image component sizes
        112          0          0          0          0       1217   wdt.o
 
     ----------------------------------------------------------------------
-      3410        322        708          8        612     138519   Object Totals
+      3986        358        452          8        512     139671   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          6          0          1          0          0          0   (incl. Padding)
 
@@ -1421,8 +1471,8 @@ Image component sizes
         96          0          0          0          0         84   uldiv.o
 
     ----------------------------------------------------------------------
-      1502         68          0          4          0        784   Library Totals
-         2          0          0          0          0          0   (incl. Padding)
+      1502         68          0          4          4        784   Library Totals
+         2          0          0          0          4          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1431,7 +1481,7 @@ Image component sizes
       1500         68          0          4          0        784   mc_p.l
 
     ----------------------------------------------------------------------
-      1502         68          0          4          0        784   Library Totals
+      1502         68          0          4          4        784   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -1440,15 +1490,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      4912        390        708         12        612     137475   Grand Totals
-      4912        390        708         12        612     137475   ELF Image Totals
-      4912        390        708         12          0          0   ROM Totals
+      5488        426        452         12        516     138451   Grand Totals
+      5488        426        452         12        516     138451   ELF Image Totals
+      5488        426        452         12          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 5620 (   5.49kB)
-    Total RW  Size (RW Data + ZI Data)               624 (   0.61kB)
-    Total ROM Size (Code + RO Data + RW Data)       5632 (   5.50kB)
+    Total RO  Size (Code + RO Data)                 5940 (   5.80kB)
+    Total RW  Size (RW Data + ZI Data)               528 (   0.52kB)
+    Total ROM Size (Code + RO Data + RW Data)       5952 (   5.81kB)
 
 ==============================================================================
 

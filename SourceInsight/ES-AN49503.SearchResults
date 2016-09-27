@@ -1,4 +1,3 @@
----- SPI_WidthType Matches (3 in 2 files) ----
-Spi.c (e:\github\es-an49503\drivers):ResultType SPI_TransferWait(SPI_Type *pSPI, SPI_WidthType* pRdBuff, SPI_WidthType *pWrBuff,uint32 uiLength)
-Spi.h (e:\github\es-an49503\drivers):typedef uint8_t   SPI_WidthType;  /* SPI width type */
-Spi.h (e:\github\es-an49503\drivers):ResultType SPI_TransferWait(SPI_Type *pSPI, SPI_WidthType* pRdBuff, SPI_WidthType *pWrBuff,uint32 uiLength);
+---- WP_SetLow Matches (2 in 2 files) ----
+Eeprom_24c.c (e:\github\es-an49503\user):    WP_SetLow();
+Eeprom_24c.h (e:\github\es-an49503\user):#define WP_SetLow()    GPIO_PinClear(GPIO_PTA1)

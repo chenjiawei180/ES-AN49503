@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Mon Sep 26 08:58:44 2016
+;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Tue Sep 27 10:07:16 2016
 ;VERSION 0.2
 ;FILE acmp.o
 ACMP0_Isr <= USED 0
@@ -45,8 +45,12 @@ CRC_Init <= USED 0
 __asm___5_crc_c_CRC_Init____REV16 <= USED 0
 __asm___5_crc_c_CRC_Init____REVSH <= USED 0
 ;FILE crc_1.o
+CRC_Calc <= USED 0
 __asm___5_crc_c_c86a7667____REV16 <= USED 0
 __asm___5_crc_c_c86a7667____REVSH <= USED 0
+;FILE eeprom_24c.o
+__asm___12_eeprom_24c_c_9fa8f570____REV16 <= USED 0
+__asm___12_eeprom_24c_c_9fa8f570____REVSH <= USED 0
 ;FILE flash.o
 FLASH_CheckErrStatus <= USED 0
 FLASH_EraseAll <= USED 0
@@ -101,7 +105,6 @@ __asm___5_ftm_c_4feeb177____REVSH <= USED 0
 GPIO_DeInit <= USED 0
 GPIO_PinInit <= USED 0
 GPIO_PinToggle <= USED 0
-GPIO_Read <= USED 0
 GPIO_Toggle <= USED 0
 GPIO_Write <= USED 0
 __asm___6_gpio_c_f8e8e39a____REV16 <= USED 0
@@ -235,9 +238,13 @@ SPI0_Isr <= USED 0
 SPI1_Isr <= USED 0
 SPI_DeInit <= USED 0
 SPI_SetCallback <= USED 0
+SPI_TransferWait <= USED 0
 __asm___5_spi_c_6267f863____REV16 <= USED 0
 __asm___5_spi_c_6267f863____REVSH <= USED 0
 ;FILE spi_app.o
+SPI_Continue_Read <= USED 0
+SPI_Dis <= USED 0
+SPI_En <= USED 0
 SPI_Read <= USED 0
 SPI_Write <= USED 0
 __asm___9_spi_app_c_b0e7de05____REV16 <= USED 0

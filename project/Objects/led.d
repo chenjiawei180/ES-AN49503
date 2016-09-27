@@ -14,6 +14,7 @@
 .\objects\led.o: ..\common\io.h
 .\objects\led.o: ..\common\startup.h
 .\objects\led.o: ..\common\stdlib.h
+.\objects\led.o: ..\drivers\bitband.h
 .\objects\led.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\led.o: ..\drivers\spi.h
 .\objects\led.o: ..\drivers\gpio.h

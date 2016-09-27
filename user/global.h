@@ -8,6 +8,7 @@
 #define __GLOBAL_H
 
 #include "common.h"
+#include "bitband.h"
 #include "string.h"
 #include "spi.h"
 
