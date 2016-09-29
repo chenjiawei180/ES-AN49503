@@ -10,6 +10,7 @@
 
 #include "global.h"
 #include "spi.h"
+#include "an49503.h"
 
 #define MAC_SPI_READ_RETRY 8
 #define AN49503_READ_CNT 0x56

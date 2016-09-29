@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Tue Sep 27 10:07:16 2016
+;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Thu Sep 29 13:41:01 2016
 ;VERSION 0.2
 ;FILE acmp.o
 ACMP0_Isr <= USED 0
@@ -31,7 +31,6 @@ malloc <= USED 0
 ;FILE arm_cm0.o
 __asm___9_arm_cm0_c_stop____REV16 <= USED 0
 __asm___9_arm_cm0_c_stop____REVSH <= USED 0
-stop <= USED 0
 wait <= USED 0
 write_vtor <= USED 0
 ;FILE assert.o
@@ -45,10 +44,16 @@ CRC_Init <= USED 0
 __asm___5_crc_c_CRC_Init____REV16 <= USED 0
 __asm___5_crc_c_CRC_Init____REVSH <= USED 0
 ;FILE crc_1.o
-CRC_Calc <= USED 0
 __asm___5_crc_c_c86a7667____REV16 <= USED 0
 __asm___5_crc_c_c86a7667____REVSH <= USED 0
 ;FILE eeprom_24c.o
+IIC_Delay <= USED 0
+IIC_Read_Buffer <= USED 0
+IIC_Receive_Byte <= USED 0
+IIC_Send_Buffer <= USED 0
+IIC_Send_Byte <= USED 0
+IIC_Start <= USED 0
+IIC_Stop <= USED 0
 __asm___12_eeprom_24c_c_9fa8f570____REV16 <= USED 0
 __asm___12_eeprom_24c_c_9fa8f570____REVSH <= USED 0
 ;FILE flash.o
@@ -105,7 +110,7 @@ __asm___5_ftm_c_4feeb177____REVSH <= USED 0
 GPIO_DeInit <= USED 0
 GPIO_PinInit <= USED 0
 GPIO_PinToggle <= USED 0
-GPIO_Toggle <= USED 0
+GPIO_Read <= USED 0
 GPIO_Write <= USED 0
 __asm___6_gpio_c_f8e8e39a____REV16 <= USED 0
 __asm___6_gpio_c_f8e8e39a____REVSH <= USED 0
@@ -155,15 +160,13 @@ __asm___4_io_c_in_char____REVSH <= USED 0
 char_present <= USED 0
 in_char <= USED 0
 ;FILE kbi.o
-KBI0_Isr <= USED 0
 KBI1_Isr <= USED 0
 KBI_DeInit <= USED 0
-KBI_Init <= USED 0
-KBI_SetCallback <= USED 0
 __asm___5_kbi_c_9ee91e6b____REV16 <= USED 0
 __asm___5_kbi_c_9ee91e6b____REVSH <= USED 0
 ;FILE led.o
-GREEN_Toggle <= USED 0
+GREEN_Off <= USED 0
+GREEN_On <= USED 0
 RED_Off <= USED 0
 RED_On <= USED 0
 RED_Toggle <= USED 0
@@ -233,20 +236,18 @@ SIM_ReadID <= USED 0
 SIM_SetClockGating <= USED 0
 __asm___5_sim_c_SIM_Init____REV16 <= USED 0
 __asm___5_sim_c_SIM_Init____REVSH <= USED 0
+;FILE sleep.o
+__asm___7_sleep_c_50ff86ef____REV16 <= USED 0
+__asm___7_sleep_c_50ff86ef____REVSH <= USED 0
 ;FILE spi.o
 SPI0_Isr <= USED 0
 SPI1_Isr <= USED 0
 SPI_DeInit <= USED 0
 SPI_SetCallback <= USED 0
-SPI_TransferWait <= USED 0
 __asm___5_spi_c_6267f863____REV16 <= USED 0
 __asm___5_spi_c_6267f863____REVSH <= USED 0
 ;FILE spi_app.o
 SPI_Continue_Read <= USED 0
-SPI_Dis <= USED 0
-SPI_En <= USED 0
-SPI_Read <= USED 0
-SPI_Write <= USED 0
 __asm___9_spi_app_c_b0e7de05____REV16 <= USED 0
 __asm___9_spi_app_c_b0e7de05____REVSH <= USED 0
 ;FILE start.o

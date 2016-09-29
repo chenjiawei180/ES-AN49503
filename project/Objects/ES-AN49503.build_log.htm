@@ -22,7 +22,7 @@ Dialog DLL:      TARMCM1.DLL V1.10.0.0
  
 <h2>Project:</h2>
 E:\Github\ES-AN49503\project\ES-AN49503.uvprojx
-Project File Date:  09/23/2016
+Project File Date:  09/29/2016
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
@@ -69,9 +69,15 @@ compiling main.c...
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
 ..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
-..\user\main.c(25): warning:  #177-D: variable "data" was declared but never referenced
+..\user\main.c(25): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t i;
+..\user\main.c(26): warning:  #177-D: variable "data" was declared but never referenced
       uint16_t data=0;
-..\user\main.c: 3 warnings, 0 errors
+..\user\main.c(27): warning:  #177-D: variable "i2c_buff" was declared but never referenced
+      uint8_t i2c_buff[3]={0x04,0x05,0x06};
+..\user\main.c(28): warning:  #177-D: variable "buff" was declared but never referenced
+      uint8_t buff[3];
+..\user\main.c: 6 warnings, 0 errors
 compiling led.c...
 ..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
@@ -94,9 +100,15 @@ compiling eeprom_24c.c...
 ..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
 ..\user\eeprom_24c.c: 2 warnings, 0 errors
+compiling sleep.c...
+..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
+      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
+..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
+      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
+..\user\sleep.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=5488 RO-data=452 RW-data=12 ZI-data=516  
-".\Objects\ES-AN49503.axf" - 0 Error(s), 12 Warning(s).
+Program Size: Code=5936 RO-data=964 RW-data=20 ZI-data=516  
+".\Objects\ES-AN49503.axf" - 0 Error(s), 17 Warning(s).
 
 *** Performing Cross-Module-Optimization:
 compiling alloc.c...
@@ -138,9 +150,15 @@ compiling main.c...
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
 ..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
-..\user\main.c(25): warning:  #177-D: variable "data" was declared but never referenced
+..\user\main.c(25): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t i;
+..\user\main.c(26): warning:  #177-D: variable "data" was declared but never referenced
       uint16_t data=0;
-..\user\main.c: 3 warnings, 0 errors
+..\user\main.c(27): warning:  #177-D: variable "i2c_buff" was declared but never referenced
+      uint8_t i2c_buff[3]={0x04,0x05,0x06};
+..\user\main.c(28): warning:  #177-D: variable "buff" was declared but never referenced
+      uint8_t buff[3];
+..\user\main.c: 6 warnings, 0 errors
 compiling led.c...
 ..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
@@ -163,10 +181,16 @@ compiling eeprom_24c.c...
 ..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
 ..\user\eeprom_24c.c: 2 warnings, 0 errors
+compiling sleep.c...
+..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
+      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
+..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
+      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
+..\user\sleep.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=5488 RO-data=452 RW-data=12 ZI-data=516  
+Program Size: Code=5936 RO-data=964 RW-data=20 ZI-data=516  
 FromELF: creating hex file...
-".\Objects\ES-AN49503.axf" - 0 Error(s), 12 Warning(s).
+".\Objects\ES-AN49503.axf" - 0 Error(s), 17 Warning(s).
 *** Completed Cross-Module-Optimization after 2 iteration(s).
 
 <h2>Collection of Component include folders:</h2>

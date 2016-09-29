@@ -24,4 +24,7 @@
 .\objects\main.o: ..\drivers\wdog.h
 .\objects\main.o: ..\drivers\sim.h
 .\objects\main.o: ..\user\spi_app.h
+.\objects\main.o: ..\user\an49503.h
 .\objects\main.o: ..\user\eeprom_24c.h
+.\objects\main.o: ..\user\sleep.h
+.\objects\main.o: ..\drivers\kbi.h

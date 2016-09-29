@@ -574,6 +574,11 @@
               <FileType>1</FileType>
               <FilePath>..\user\eeprom_24c.c</FilePath>
             </File>
+            <File>
+              <FileName>sleep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\sleep.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

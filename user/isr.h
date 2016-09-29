@@ -58,8 +58,12 @@ extern void RTC_Isr(void);
 #undef  VECTOR_002
 #define VECTOR_002      NMI_Isr  /*!< Vector 2 points to NMI interrupt service routine */
 
+#undef  VECTOR_040
+#define VECTOR_040 KBI0_Isr
+
 extern void RTC_Isr(void);
 extern void NMI_Isr(void);
+extern void KBI0_Isr(void);
 
 #endif  //__ISR_H
 

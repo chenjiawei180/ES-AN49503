@@ -1,3 +1,7 @@
----- WP_SetLow Matches (2 in 2 files) ----
-Eeprom_24c.c (e:\github\es-an49503\user):    WP_SetLow();
-Eeprom_24c.h (e:\github\es-an49503\user):#define WP_SetLow()    GPIO_PinClear(GPIO_PTA1)
+---- WFI Matches (6 in 1 files) ----
+Arm_cm0.c (e:\github\es-an49503\cpu): * and then executes the WFI instruction to enter the mode.
+Arm_cm0.c (e:\github\es-an49503\cpu):	/* WFI instruction will start entry into STOP mode */
+Arm_cm0.c (e:\github\es-an49503\cpu):	asm("WFI");
+Arm_cm0.c (e:\github\es-an49503\cpu): * and then executes the WFI instruction to enter the mode.
+Arm_cm0.c (e:\github\es-an49503\cpu):	/* WFI instruction will start entry into WAIT mode */
+Arm_cm0.c (e:\github\es-an49503\cpu):	asm("WFI");
