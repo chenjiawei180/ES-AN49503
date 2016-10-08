@@ -1,7 +1,3 @@
----- WFI Matches (6 in 1 files) ----
-Arm_cm0.c (e:\github\es-an49503\cpu): * and then executes the WFI instruction to enter the mode.
-Arm_cm0.c (e:\github\es-an49503\cpu):	/* WFI instruction will start entry into STOP mode */
-Arm_cm0.c (e:\github\es-an49503\cpu):	asm("WFI");
-Arm_cm0.c (e:\github\es-an49503\cpu): * and then executes the WFI instruction to enter the mode.
-Arm_cm0.c (e:\github\es-an49503\cpu):	/* WFI instruction will start entry into WAIT mode */
-Arm_cm0.c (e:\github\es-an49503\cpu):	asm("WFI");
+---- CAN_IDAR0 Matches (2 in 1 files) ----
+Main.c (e:\github\es-an49503\user):#define CAN_IDAR0			0xffffffff    //NODE_ID2<<1
+Main.c (e:\github\es-an49503\user):	sMSCANConfig.u32IDAR0 = (CAN_IDAR0);

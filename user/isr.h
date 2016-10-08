@@ -61,9 +61,18 @@ extern void RTC_Isr(void);
 #undef  VECTOR_040
 #define VECTOR_040 KBI0_Isr
 
+#if 1
+#undef  VECTOR_046
+#define VECTOR_046      MSCAN_RxIsr          /*!< Vector 36 points to RTC interrupt service routine */ 
+#undef  VECTOR_047
+#define VECTOR_047      MSCAN_TxIsr          /*!< Vector 36 points to RTC interrupt service routine */
+#endif
+
 extern void RTC_Isr(void);
 extern void NMI_Isr(void);
 extern void KBI0_Isr(void);
+extern void MSCAN_RxIsr( void );
+extern void MSCAN_TxIsr( void );
 
 #endif  //__ISR_H
 

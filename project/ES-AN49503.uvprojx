@@ -545,11 +545,6 @@
           <GroupName>user</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\user\main.c</FilePath>
-            </File>
-            <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\led.c</FilePath>
@@ -578,6 +573,21 @@
               <FileName>sleep.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\user\sleep.c</FilePath>
+            </File>
+            <File>
+              <FileName>mscan_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\mscan_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>can_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\can_app.c</FilePath>
             </File>
           </Files>
         </Group>

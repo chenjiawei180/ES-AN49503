@@ -1,4 +1,4 @@
-;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Thu Sep 29 13:41:01 2016
+;#<FEEDBACK># ARM Linker, 5060300: Last Updated: Sat Oct 08 09:13:04 2016
 ;VERSION 0.2
 ;FILE acmp.o
 ACMP0_Isr <= USED 0
@@ -31,11 +31,16 @@ malloc <= USED 0
 ;FILE arm_cm0.o
 __asm___9_arm_cm0_c_stop____REV16 <= USED 0
 __asm___9_arm_cm0_c_stop____REVSH <= USED 0
+stop <= USED 0
 wait <= USED 0
 write_vtor <= USED 0
 ;FILE assert.o
 __asm___8_assert_c_ae791a4b____REV16 <= USED 0
 __asm___8_assert_c_ae791a4b____REVSH <= USED 0
+;FILE can_app.o
+CAN_APP_Send <= USED 0
+__asm___9_can_app_c_315b338b____REV16 <= USED 0
+__asm___9_can_app_c_315b338b____REVSH <= USED 0
 ;FILE crc.o
 CRC_Cal16 <= USED 0
 CRC_Cal32 <= USED 0
@@ -182,17 +187,14 @@ memTestDevice <= USED 0
 ;FILE mscan.o
 CAN_DeInit <= USED 0
 CAN_EnterSleep <= USED 0
-CAN_Init <= USED 0
 CAN_LaunchInitialRequest <= USED 0
-CAN_LoadOneFrameToBuff <= USED 0
-CAN_ReadOneFrameFromBuff <= USED 0
 CAN_WakeUpFromSleep <= USED 0
-MSCAN_RxIsr <= USED 0
-MSCAN_SetRxCallBack <= USED 0
-MSCAN_SetTxCallBack <= USED 0
-MSCAN_TxIsr <= USED 0
 __asm___7_mscan_c_CAN_Init____REV16 <= USED 0
 __asm___7_mscan_c_CAN_Init____REVSH <= USED 0
+;FILE mscan_api.o
+CAN_TransmitItemByInt <= USED 0
+__asm___11_mscan_api_c_6a176777____REV16 <= USED 0
+__asm___11_mscan_api_c_6a176777____REVSH <= USED 0
 ;FILE pit.o
 PIT_Ch0Isr <= USED 0
 PIT_Ch1Isr <= USED 0

@@ -64,20 +64,6 @@ compiling sim.c...
 compiling spi.c...
 compiling uart.c...
 compiling wdog.c...
-compiling main.c...
-..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
-      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
-..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
-      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
-..\user\main.c(25): warning:  #177-D: variable "i" was declared but never referenced
-      uint32_t i;
-..\user\main.c(26): warning:  #177-D: variable "data" was declared but never referenced
-      uint16_t data=0;
-..\user\main.c(27): warning:  #177-D: variable "i2c_buff" was declared but never referenced
-      uint8_t i2c_buff[3]={0x04,0x05,0x06};
-..\user\main.c(28): warning:  #177-D: variable "buff" was declared but never referenced
-      uint8_t buff[3];
-..\user\main.c: 6 warnings, 0 errors
 compiling led.c...
 ..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
@@ -106,9 +92,21 @@ compiling sleep.c...
 ..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
 ..\user\sleep.c: 2 warnings, 0 errors
+compiling mscan_api.c...
+compiling main.c...
+..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
+      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
+..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
+      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
+..\user\main.c(35): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t i;
+..\user\main.c(37): warning:  #177-D: variable "i2c_buff" was declared but never referenced
+      uint8_t i2c_buff[24]={0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17};
+..\user\main.c: 4 warnings, 0 errors
+compiling can_app.c...
 linking...
-Program Size: Code=5936 RO-data=964 RW-data=20 ZI-data=516  
-".\Objects\ES-AN49503.axf" - 0 Error(s), 17 Warning(s).
+Program Size: Code=8628 RO-data=964 RW-data=36 ZI-data=1092  
+".\Objects\ES-AN49503.axf" - 0 Error(s), 15 Warning(s).
 
 *** Performing Cross-Module-Optimization:
 compiling alloc.c...
@@ -145,20 +143,6 @@ compiling sim.c...
 compiling spi.c...
 compiling uart.c...
 compiling wdog.c...
-compiling main.c...
-..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
-      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
-..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
-      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
-..\user\main.c(25): warning:  #177-D: variable "i" was declared but never referenced
-      uint32_t i;
-..\user\main.c(26): warning:  #177-D: variable "data" was declared but never referenced
-      uint16_t data=0;
-..\user\main.c(27): warning:  #177-D: variable "i2c_buff" was declared but never referenced
-      uint8_t i2c_buff[3]={0x04,0x05,0x06};
-..\user\main.c(28): warning:  #177-D: variable "buff" was declared but never referenced
-      uint8_t buff[3];
-..\user\main.c: 6 warnings, 0 errors
 compiling led.c...
 ..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
       GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
@@ -187,10 +171,22 @@ compiling sleep.c...
 ..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
 ..\user\sleep.c: 2 warnings, 0 errors
+compiling mscan_api.c...
+compiling main.c...
+..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
+      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
+..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
+      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
+..\user\main.c(35): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t i;
+..\user\main.c(37): warning:  #177-D: variable "i2c_buff" was declared but never referenced
+      uint8_t i2c_buff[24]={0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17};
+..\user\main.c: 4 warnings, 0 errors
+compiling can_app.c...
 linking...
-Program Size: Code=5936 RO-data=964 RW-data=20 ZI-data=516  
+Program Size: Code=8628 RO-data=964 RW-data=36 ZI-data=1092  
 FromELF: creating hex file...
-".\Objects\ES-AN49503.axf" - 0 Error(s), 17 Warning(s).
+".\Objects\ES-AN49503.axf" - 0 Error(s), 15 Warning(s).
 *** Completed Cross-Module-Optimization after 2 iteration(s).
 
 <h2>Collection of Component include folders:</h2>
@@ -198,7 +194,7 @@ FromELF: creating hex file...
   D:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:22
+Build Time Elapsed:  00:00:23
 </pre>
 </body>
 </html>

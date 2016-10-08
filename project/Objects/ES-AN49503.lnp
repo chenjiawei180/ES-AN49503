@@ -29,13 +29,15 @@
 ".\objects\spi.o"
 ".\objects\uart.o"
 ".\objects\wdog.o"
-".\objects\main.o"
 ".\objects\led.o"
 ".\objects\wdt.o"
 ".\objects\spi_app.o"
 ".\objects\crc_1.o"
 ".\objects\eeprom_24c.o"
 ".\objects\sleep.o"
+".\objects\mscan_api.o"
+".\objects\main.o"
+".\objects\can_app.o"
 --library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x1FFFF000 --entry Reset_Handler --first __Vectors
 --feedback ".\Objects\ES-AN49503.fed" --feedback_image=none
 --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols

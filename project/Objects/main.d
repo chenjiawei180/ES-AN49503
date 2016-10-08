@@ -28,3 +28,6 @@
 .\objects\main.o: ..\user\eeprom_24c.h
 .\objects\main.o: ..\user\sleep.h
 .\objects\main.o: ..\drivers\kbi.h
+.\objects\main.o: ..\user\can_app.h
+.\objects\main.o: ..\drivers\mscan.h
+.\objects\main.o: ..\user\mscan_api.h
