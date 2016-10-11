@@ -17,12 +17,12 @@ Library Manager: ArmAr.exe V5.06 update 3 (build 300)
 Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
 CPU DLL:         SARMCM3.DLL V5.21a
 Dialog DLL:      DARMCM1.DLL V1.14.0.0
-Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.11
+Target DLL:      Segger\JL2CM3.dll V1.09
 Dialog DLL:      TARMCM1.DLL V1.10.0.0
  
 <h2>Project:</h2>
 E:\Github\ES-AN49503\project\ES-AN49503.uvprojx
-Project File Date:  09/29/2016
+Project File Date:  10/10/2016
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
@@ -100,13 +100,16 @@ compiling main.c...
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
 ..\user\main.c(35): warning:  #177-D: variable "i" was declared but never referenced
       uint32_t i;
-..\user\main.c(37): warning:  #177-D: variable "i2c_buff" was declared but never referenced
-      uint8_t i2c_buff[24]={0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17};
-..\user\main.c: 4 warnings, 0 errors
+..\user\main.c: 3 warnings, 0 errors
 compiling can_app.c...
+..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
+      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
+..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
+      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
+..\user\can_app.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=8628 RO-data=964 RW-data=36 ZI-data=1092  
-".\Objects\ES-AN49503.axf" - 0 Error(s), 15 Warning(s).
+Program Size: Code=8524 RO-data=964 RW-data=36 ZI-data=1092  
+".\Objects\ES-AN49503.axf" - 0 Error(s), 16 Warning(s).
 
 *** Performing Cross-Module-Optimization:
 compiling alloc.c...
@@ -179,14 +182,18 @@ compiling main.c...
       GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
 ..\user\main.c(35): warning:  #177-D: variable "i" was declared but never referenced
       uint32_t i;
-..\user\main.c(37): warning:  #177-D: variable "i2c_buff" was declared but never referenced
-      uint8_t i2c_buff[24]={0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17};
-..\user\main.c: 4 warnings, 0 errors
+..\user\main.c: 3 warnings, 0 errors
 compiling can_app.c...
+..\drivers\gpio.h(169): warning:  #61-D: integer operation result is out of range
+      GPIO_PTD7_MASK = (1<<31),   /*!< GPIO Pin PTD7 bit mask */
+..\drivers\gpio.h(202): warning:  #61-D: integer operation result is out of range
+      GPIO_PTH7_MASK = (1<<31),   /*!< GPIO Pin PTH7 bit mask */
+..\user\can_app.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=8628 RO-data=964 RW-data=36 ZI-data=1092  
+Program Size: Code=8524 RO-data=964 RW-data=36 ZI-data=1092  
 FromELF: creating hex file...
-".\Objects\ES-AN49503.axf" - 0 Error(s), 15 Warning(s).
+After Build - User command #2: fromelf --bin -o "E:\Github\ES-AN49503\project\Objects\ES-AN49503.bin" "E:\Github\ES-AN49503\project\Objects\ES-AN49503.axf"
+".\Objects\ES-AN49503.axf" - 0 Error(s), 16 Warning(s).
 *** Completed Cross-Module-Optimization after 2 iteration(s).
 
 <h2>Collection of Component include folders:</h2>
@@ -194,7 +201,7 @@ FromELF: creating hex file...
   D:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:23
+Build Time Elapsed:  00:00:22
 </pre>
 </body>
 </html>

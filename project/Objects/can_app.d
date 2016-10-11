@@ -19,3 +19,4 @@
 .\objects\can_app.o: ..\drivers\spi.h
 .\objects\can_app.o: ..\drivers\mscan.h
 .\objects\can_app.o: ..\user\mscan_api.h
+.\objects\can_app.o: ..\drivers\gpio.h

@@ -6,6 +6,7 @@
   ******************************************************************************/
 
 #include "can_app.h"
+#include "gpio.h"
 
 /**
   * @brief  This function is Init CAN.
@@ -17,6 +18,10 @@ void CAN_APP_Init(void)
 {
     MSCAN_ConfigType sMSCANConfig = {0};
 
+    GPIO_Init(GPIOA, GPIO_PTD0_MASK, GPIO_PinOutput);
+    GPIO_PinClear(GPIO_PTD0);
+
+    //CAN_DeInit(MSCAN);
     MSCAN_GlobeVaribleInit(MSCAN);
     SIM->PINSEL1 |= SIM_PINSEL1_MSCANPS_MASK;
     
@@ -31,7 +36,7 @@ void CAN_APP_Init(void)
     sMSCANConfig.u32IDMR1 = (CAN_IDMR1);
     sMSCANConfig.u8IDARMode = ID_ACCEPT_MODE_TWO32;
     sMSCANConfig.sSetting.bCanEn = 1;
-    sMSCANConfig.sSetting.bCLKSRC = 0;
+    sMSCANConfig.sSetting.bCLKSRC = 1;
     //  sMSCANConfig.sSetting.bLoopModeEn = 1;
     sMSCANConfig.sSetting.bRxFullIEn=1;
     sMSCANConfig.sSetting.bTimerEn=1;

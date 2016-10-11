@@ -314,35 +314,21 @@ ARM Macro Assembler    Page 5
                        FOPT    EQU              0xFE
   181 000000C0         ;   </h>
   182 000000C0                 IF               :LNOT::DEF:RAM_TARGET
-  183 000000C0                 AREA             |.ARM.__at_0x400|, CODE, READON
-LY
-  184 00000000 FF FF FF 
-              FF               DCB              BackDoorK0, BackDoorK1, BackDoo
-rK2, BackDoorK3
-  185 00000004 FF FF FF 
-              FF               DCB              BackDoorK4, BackDoorK5, BackDoo
-rK6, BackDoorK7
-  186 00000008 FF FF FF 
-
-
-
-ARM Macro Assembler    Page 6 
-
-
-              FF               DCB              0xFF,       0xFF,       0xFF,  
-     0xFF
-  187 0000000C FF FF FE 
-              FE               DCB              0xFF,       FPROT,      FSEC,  
-     FOPT
-  188 00000010                 ENDIF
-  189 00000010         
-  190 00000010                 AREA             |.text|, CODE, READONLY
+  188                          ENDIF
+  189 000000C0         
+  190 000000C0                 AREA             |.text|, CODE, READONLY
   191 00000000         
   192 00000000         
   193 00000000         ; Reset Handler
   194 00000000         
   195 00000000         Reset_Handler
                                PROC
+
+
+
+ARM Macro Assembler    Page 6 
+
+
   196 00000000                 EXPORT           Reset_Handler             [WEAK
 ]
   197 00000000                 IMPORT           SystemInit
@@ -388,12 +374,6 @@ ARM Macro Assembler    Page 6
   230 00000010 E7FE            B                .
   231 00000012                 ENDP
   232 00000012         SVC_Handler
-
-
-
-ARM Macro Assembler    Page 7 
-
-
                                PROC
   233 00000012                 EXPORT           SVC_Handler               [WEAK
 ]
@@ -408,6 +388,12 @@ ARM Macro Assembler    Page 7
   241 00000016         PendSV_Handler
                                PROC
   242 00000016                 EXPORT           PendSV_Handler            [WEAK
+
+
+
+ARM Macro Assembler    Page 7 
+
+
 ]
   243 00000016 E7FE            B                .
   244 00000018                 ENDP
@@ -453,12 +439,6 @@ ARM Macro Assembler    Page 7
   276 0000001A                 EXPORT           KBI1_IRQHandler     [WEAK]
   277 0000001A                 EXPORT           Reserved42_IRQHandler     [WEAK
 ]
-
-
-
-ARM Macro Assembler    Page 8 
-
-
   278 0000001A                 EXPORT           ICS_IRQHandler     [WEAK]
   279 0000001A                 EXPORT           Watchdog_IRQHandler     [WEAK]
   280 0000001A                 EXPORT           PWT_IRQHandler     [WEAK]
@@ -473,6 +453,12 @@ ARM Macro Assembler    Page 8
   288 0000001A         Reserved19_IRQHandler
   289 0000001A         Reserved20_IRQHandler
   290 0000001A         FTMRE_IRQHandler
+
+
+
+ARM Macro Assembler    Page 8 
+
+
   291 0000001A         LVD_LVW_IRQHandler
   292 0000001A         IRQ_IRQHandler
   293 0000001A         I2C0_IRQHandler
@@ -518,12 +504,6 @@ ARM Macro Assembler    Page 8
   333 0000001C                 EXPORT           __heap_limit
   334 0000001C         
   335 0000001C                 ELSE
-
-
-
-ARM Macro Assembler    Page 9 
-
-
   349                          ENDIF
   350 0000001C         
   351 0000001C         
@@ -534,8 +514,9 @@ Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
 work --depend=.\objects\startup_mke06z4.d -o.\objects\startup_mke06z4.o -IE:\Gi
 thub\ES-AN49503\project\RTE -ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\D
 evice\Include -ID:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --
-predefine="__UVISION_VERSION SETA 521" --predefine="MKE06Z128xxx4 SETA 1" --lis
-t=.\listings\startup_mke06z4.lst ..\cpu\startup_MKE06Z4.s
+predefine="__UVISION_VERSION SETA 521" --predefine="MKE06Z128xxx4 SETA 1" --pre
+define="RAM_TARGET SETA 1" --list=.\listings\startup_mke06z4.lst ..\cpu\startup
+_MKE06Z4.s
 
 
 
@@ -640,21 +621,6 @@ Symbol: __Vectors_End
       At line 101 in file ..\cpu\startup_MKE06Z4.s
 
 3 symbols
-
-
-
-ARM Macro Assembler    Page 1 Alphabetic symbol ordering
-Relocatable symbols
-
-.ARM.__at_0x400 00000000
-
-Symbol: .ARM.__at_0x400
-   Definitions
-      At line 183 in file ..\cpu\startup_MKE06Z4.s
-   Uses
-      None
-Comment: .ARM.__at_0x400 unused
-1 symbol
 
 
 
@@ -1107,56 +1073,56 @@ Symbol: BackDoorK0
    Definitions
       At line 115 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 184 in file ..\cpu\startup_MKE06Z4.s
-Comment: BackDoorK0 used once
+      None
+Comment: BackDoorK0 unused
 BackDoorK1 000000FF
 
 Symbol: BackDoorK1
    Definitions
       At line 116 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 184 in file ..\cpu\startup_MKE06Z4.s
-Comment: BackDoorK1 used once
+      None
+Comment: BackDoorK1 unused
 BackDoorK2 000000FF
 
 Symbol: BackDoorK2
    Definitions
       At line 117 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 184 in file ..\cpu\startup_MKE06Z4.s
-Comment: BackDoorK2 used once
+      None
+Comment: BackDoorK2 unused
 BackDoorK3 000000FF
 
 Symbol: BackDoorK3
    Definitions
       At line 118 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 184 in file ..\cpu\startup_MKE06Z4.s
-Comment: BackDoorK3 used once
+      None
+Comment: BackDoorK3 unused
 BackDoorK4 000000FF
 
 Symbol: BackDoorK4
    Definitions
       At line 119 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 185 in file ..\cpu\startup_MKE06Z4.s
-Comment: BackDoorK4 used once
+      None
+Comment: BackDoorK4 unused
 BackDoorK5 000000FF
 
 Symbol: BackDoorK5
    Definitions
       At line 120 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 185 in file ..\cpu\startup_MKE06Z4.s
-Comment: BackDoorK5 used once
+      None
+Comment: BackDoorK5 unused
 BackDoorK6 000000FF
 
 Symbol: BackDoorK6
    Definitions
       At line 121 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 185 in file ..\cpu\startup_MKE06Z4.s
-Comment: BackDoorK6 used once
+      None
+Comment: BackDoorK6 unused
 BackDoorK7 000000FF
 
 Symbol: BackDoorK7
@@ -1169,8 +1135,8 @@ Absolute symbols
    Definitions
       At line 122 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 185 in file ..\cpu\startup_MKE06Z4.s
-Comment: BackDoorK7 used once
+      None
+Comment: BackDoorK7 unused
 EEPROT 000000FF
 
 Symbol: EEPROT
@@ -1185,24 +1151,24 @@ Symbol: FOPT
    Definitions
       At line 180 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 187 in file ..\cpu\startup_MKE06Z4.s
-Comment: FOPT used once
+      None
+Comment: FOPT unused
 FPROT 000000FF
 
 Symbol: FPROT
    Definitions
       At line 161 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 187 in file ..\cpu\startup_MKE06Z4.s
-Comment: FPROT used once
+      None
+Comment: FPROT unused
 FSEC 000000FE
 
 Symbol: FSEC
    Definitions
       At line 177 in file ..\cpu\startup_MKE06Z4.s
    Uses
-      At line 187 in file ..\cpu\startup_MKE06Z4.s
-Comment: FSEC used once
+      None
+Comment: FSEC unused
 Heap_Size 00000000
 
 Symbol: Heap_Size
@@ -1257,4 +1223,4 @@ Symbol: __main
       At line 201 in file ..\cpu\startup_MKE06Z4.s
 Comment: __main used once
 2 symbols
-410 symbols in table
+408 symbols in table

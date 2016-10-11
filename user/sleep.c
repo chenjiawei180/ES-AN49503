@@ -54,7 +54,7 @@ void Sleep_Wake_Up(void)
         SPI_Write(DEV_ADD, STAT_ADDR, 0X0004);
         SPI_Write(DEV_ADD, OP_MODE_ADDR, 0X4004);
         SPI_Write(DEV_ADD, LOCK_ADDR, 0X0000);
-        GREEN_Toggle();    
+	 GREEN_Toggle();
     }
 }
 

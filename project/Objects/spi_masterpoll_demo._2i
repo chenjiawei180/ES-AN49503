@@ -1,6 +1,0 @@
--c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\common -I ..\cpu\headers -I ..\cpu -I ..\drivers -I ..\user
--IE:\Github\ES-AN49503\project\RTE
--ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KExx_DFP\1.4.0\Device\Include
--ID:\Keil_v5\ARM\CMSIS\Include
--D__UVISION_VERSION="521" -DMKE06Z128xxx4 -DCMSIS -DCPU_KE06 -DKEIL -DFRDM_KE06
--o .\objects\spi_masterpoll_demo.o --omf_browse .\objects\spi_masterpoll_demo.crf --depend .\objects\spi_masterpoll_demo.d --feedback ".\Objects\ES-AN49503.fed" "..\user\SPI_MasterPoll_demo.c"

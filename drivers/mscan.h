@@ -73,11 +73,11 @@ extern "C" {
 //									(BAUD_RATE_SJW+1)/(3 + BAUD_RATE_TSEG1+\
 //									BAUD_RATE_TSEG2)
 #define BAUD_RATE_SJW             	SJW_3TQ	/*!< 1 set Synchronization Jump Width. */
-#define BAUD_RATE_BRP				7		/*!< 1 Baud Rate Prescaler */	
+#define BAUD_RATE_BRP				1		/*!< 1 Baud Rate Prescaler */	
 #define BAUD_RATE_SAMP				0		/*!< 0-One sample per bit, 1-three sample per bit. */	
-#define BAUD_RATE_TSEG1				TSEG_5  /*!< Time Segment 1*/
-#define BAUD_RATE_TSEG2				TSEG_4   /*!< Time Segment 2*/
-#define BAUD_RATE_CLOCK				8000000L /*!< clock source for MSCAN*/
+#define BAUD_RATE_TSEG1				TSEG_12  /*!< Time Segment 1*/
+#define BAUD_RATE_TSEG2				TSEG_7  /*!< Time Segment 2*/
+#define BAUD_RATE_CLOCK				20000000L /*!< clock source for MSCAN*/
 #define Baud_RATE					BAUD_RATE_CLOCK/(BAUD_RATE_BRP+1)/(3 + BAUD_RATE_TSEG1+BAUD_RATE_TSEG2)
 								
 /*! @} End of baud_rate_list													*/

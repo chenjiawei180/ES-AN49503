@@ -42,7 +42,11 @@
 typedef void (*vector_entry)(void);
 
 #ifdef KEIL
+#ifdef VECTOR
+const vector_entry  __vector_table[] __attribute__((at(VECTOR))) =
+#else
 const vector_entry  __vector_table[] __attribute__((at(0x00))) =
+#endif
 #elif (defined(__GNUC__))
 //void (* const __vector_table[])() __attribute__ ((section(".vectortable"))) = 
 void (* const InterruptVector[])() __attribute__ ((section(".vectortable"))) = 

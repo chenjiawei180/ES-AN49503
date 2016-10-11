@@ -34,7 +34,7 @@ int main(void)
 {
     uint32_t i;
     //uint16_t data=0;
-    uint8_t i2c_buff[24]={0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17};
+    uint8_t i2c_buff[24]={0x30,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x10,0x11,0x12,0x13,0x14,0x15,0x16,0x17};
     //uint8_t buff[3];
     /* Set the system clock */
     sysinit();
@@ -45,6 +45,8 @@ int main(void)
     /* Led init */
     RED_Init();
     GREEN_Init();
+    //GREEN_On();
+    //RED_On();
 
     /* SPI0 init */
     SIM_RemapSPI0ToPTE_0_12_3(); //    remap SPI0 to pin PTE01/2/3
@@ -70,10 +72,11 @@ int main(void)
 
     while(1)
     {
-        //for(i=0;i<0xffff;i++) WDT_Clear();
+        //for(i=0;i<0xffff;i++); WDT_Clear();
         WDT_Clear();
-        //CAN_APP_Send(24, i2c_buff);
-        CAN_APP_Rive();
+	 //RED_Toggle();
+        CAN_APP_Send(1, i2c_buff);
+        //CAN_APP_Rive();
         //wait();    //enter the sleep mode
         //stop();  // enter the deep sleep mode
 #if 0
